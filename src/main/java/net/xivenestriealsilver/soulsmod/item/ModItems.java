@@ -1,10 +1,7 @@
 package net.xivenestriealsilver.soulsmod.item;
 
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -59,7 +56,19 @@ public class ModItems {
 
 
     public static final DeferredItem<SwordItem> LAZURITE_SWORD = ITEMS.register("lazurite_sword", ()-> new SwordItem(ModToolTiers.LAZURITE,
-            new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.LAZURITE, 4f, 9f))));
+            new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.LAZURITE, 5f, -2.4f))));
+
+    public static final DeferredItem<PickaxeItem> LAZURITE_PICKAXE = ITEMS.register("lazurite_pickaxe", ()-> new PickaxeItem(ModToolTiers.LAZURITE,
+            new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.LAZURITE, 1.0f, -2.8f))));
+
+    public static final DeferredItem<ShovelItem> LAZURITE_SHOVEL = ITEMS.register("lazurite_shovel", ()-> new ShovelItem(ModToolTiers.LAZURITE,
+            new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.LAZURITE, 1.5f, -3.0f))));
+
+    public static final DeferredItem<AxeItem> LAZURITE_AXE = ITEMS.register("lazurite_axe", ()-> new AxeItem(ModToolTiers.LAZURITE,
+            new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.LAZURITE, 6.0f, -3.2f))));
+
+    public static final DeferredItem<HoeItem> LAZURITE_HOE = ITEMS.register("lazurite_hoe", ()-> new HoeItem(ModToolTiers.LAZURITE,
+            new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.LAZURITE, 0f, -3.0f))));
 
 
 
