@@ -71,6 +71,24 @@ public class ModItems {
             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.LAZURITE, -4.0f, 0f))));
 
 
+    public static final DeferredItem<ArmorItem> LAZURITE_HELMET = ITEMS.register("lazurite_helmet", ()->
+            new ArmorItem(ModArmorMaterials.LAZURITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(30))));
+
+    public static final DeferredItem<ArmorItem> LAZURITE_CHESTPLATE = ITEMS.register("lazurite_chestplate", ()->
+            new ArmorItem(ModArmorMaterials.LAZURITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(30))));
+
+    public static final DeferredItem<ArmorItem> LAZURITE_LEGGINGS = ITEMS.register("lazurite_leggings", ()->
+            new ArmorItem(ModArmorMaterials.LAZURITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(30))));
+
+    public static final DeferredItem<ArmorItem> LAZURITE_BOOTS = ITEMS.register("lazurite_boots", ()->
+            new ArmorItem(ModArmorMaterials.LAZURITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(30))));
+
+
+
 
 
 

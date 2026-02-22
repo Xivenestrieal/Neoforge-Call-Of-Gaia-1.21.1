@@ -40,6 +40,14 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.HOES)
                 .add(ModItems.LAZURITE_HOE.get());
 
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.LAZURITE_HELMET.get())
+                .add(ModItems.LAZURITE_CHESTPLATE.get())
+                .add(ModItems.LAZURITE_LEGGINGS.get())
+                .add(ModItems.LAZURITE_BOOTS.get());
+
+
+
 
     }
 }
