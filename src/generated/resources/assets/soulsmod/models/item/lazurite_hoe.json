@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "soulsmod:item/lazurite_hoe"
+  }
+}
