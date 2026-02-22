@@ -56,7 +56,7 @@ public class ModItems {
 
 
     public static final DeferredItem<SwordItem> LAZURITE_SWORD = ITEMS.register("lazurite_sword", ()-> new SwordItem(ModToolTiers.LAZURITE,
-            new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.LAZURITE, 5f, -2.4f))));
+            new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.LAZURITE, 3f, -2.4f))));
 
     public static final DeferredItem<PickaxeItem> LAZURITE_PICKAXE = ITEMS.register("lazurite_pickaxe", ()-> new PickaxeItem(ModToolTiers.LAZURITE,
             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.LAZURITE, 1.0f, -2.8f))));
@@ -65,10 +65,10 @@ public class ModItems {
             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.LAZURITE, 1.5f, -3.0f))));
 
     public static final DeferredItem<AxeItem> LAZURITE_AXE = ITEMS.register("lazurite_axe", ()-> new AxeItem(ModToolTiers.LAZURITE,
-            new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.LAZURITE, 6.0f, -3.2f))));
+            new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.LAZURITE, 5.0f, -3.0f))));
 
     public static final DeferredItem<HoeItem> LAZURITE_HOE = ITEMS.register("lazurite_hoe", ()-> new HoeItem(ModToolTiers.LAZURITE,
-            new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.LAZURITE, 0f, -3.0f))));
+            new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.LAZURITE, -4.0f, 0f))));
 
 
 

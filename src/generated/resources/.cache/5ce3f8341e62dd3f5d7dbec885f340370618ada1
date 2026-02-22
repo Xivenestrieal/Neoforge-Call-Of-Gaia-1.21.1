@@ -1,2 +1,7 @@
-// 1.21	2026-02-18T12:09:53.1476142	Tags for minecraft:item mod id soulsmod
+// 1.21	2026-02-22T17:29:33.6112467	Tags for minecraft:item mod id soulsmod
+58b16bbb4d7bf7146ab57c78f12f92f6ade76705 data/minecraft/tags/item/axes.json
+2eaccbd00a71d3de15a7012ae2e42493afe466eb data/minecraft/tags/item/hoes.json
+47869a38d45fd974fda987bd78e6943f051a0bd2 data/minecraft/tags/item/pickaxes.json
+9e5a6776aa3216a46109a67b62ba2ca8925e083e data/minecraft/tags/item/shovels.json
+6e4c1e78ed50602bbb8b8c6e92d52f055f1f310b data/minecraft/tags/item/swords.json
 97c4ff6fc0b2ec44ecd4b64781ed40e672a64ea6 data/soulsmod/tags/item/transformable_items.json

@@ -1,11 +1,16 @@
-// 1.21	2026-02-18T12:09:53.1476142	Item Models: soulsmod
+// 1.21	2026-02-22T17:29:33.6112467	Item Models: soulsmod
 8342a75ae15bf3954ddad66e88165483dc43b23a assets/soulsmod/models/item/chisel.json
 61a2d3a7739a5128d08c05a798bd478492f8f347 assets/soulsmod/models/item/corrupted_soul.json
 0477bb6d24475cc079e09b2c3016626bad859fd9 assets/soulsmod/models/item/ent_charcoal.json
 a5712d4ba58f452bc153638a4aa57eee94312daa assets/soulsmod/models/item/frozen_flame.json
 e1ce646a61cd27c32f89a7a71ec0c68bcf60bc0d assets/soulsmod/models/item/hogyoku_soul.json
+a44252001a4003000e4a0bfed61c155a53d92341 assets/soulsmod/models/item/lazurite_axe.json
+a24f1db1cbd4c39118f345a4b82d423fb593f2ed assets/soulsmod/models/item/lazurite_hoe.json
 6e2d0a39364baf1ad16a90466c4aa24ccd6a5205 assets/soulsmod/models/item/lazurite_ingot.json
 b67e559508d14698a5e012973c75811bd55a514d assets/soulsmod/models/item/lazurite_key.json
+4dc738c242f627a29b3ae33032dc5397bc36357d assets/soulsmod/models/item/lazurite_pickaxe.json
+58333479bbd44867995aee9c5b510e01c984aba5 assets/soulsmod/models/item/lazurite_shovel.json
+add01a4cc36630e7abc8f249dd2baaf8e26ac3b3 assets/soulsmod/models/item/lazurite_sword.json
 9d055e4db7ce9e6f69a01a20bb552cfb5e09ee27 assets/soulsmod/models/item/raw_lazurite.json
 a1cc8a22e913244f7bba030afeb8f27340a8d3e5 assets/soulsmod/models/item/root_heart.json
 3ca29831f28e6d05cb20f9a94b6375c1cbf101e0 assets/soulsmod/models/item/seeking_eyes.json
