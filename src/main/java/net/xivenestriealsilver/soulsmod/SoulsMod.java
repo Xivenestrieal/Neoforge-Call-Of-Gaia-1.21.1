@@ -4,6 +4,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.xivenestriealsilver.soulsmod.block.ModBlocks;
+import net.xivenestriealsilver.soulsmod.component.ModDataComponents;
 import net.xivenestriealsilver.soulsmod.item.ModCreativeModeTabs;
 import net.xivenestriealsilver.soulsmod.item.ModItems;
 import org.slf4j.Logger;
@@ -45,6 +46,8 @@ public class SoulsMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModDataComponents.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

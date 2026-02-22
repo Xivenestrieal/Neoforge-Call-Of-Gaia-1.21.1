@@ -16,6 +16,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.xivenestriealsilver.soulsmod.block.ModBlocks;
+import net.xivenestriealsilver.soulsmod.component.ModDataComponents;
 
 import java.util.List;
 import java.util.Map;
@@ -46,6 +47,8 @@ public class ChiselItem extends Item{
                         item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
                 level.playSound(null, context.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS, 1.0F, 1.0F);
+
+                context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
             }
 
         }
@@ -61,7 +64,9 @@ public class ChiselItem extends Item{
 
         }
 
-
+        if(stack.get(ModDataComponents.COORDINATES) != null) {
+            tooltipComponents.add(Component.literal("Last Block Changed at" + stack.get(ModDataComponents.COORDINATES)));
+        }
 
 
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
