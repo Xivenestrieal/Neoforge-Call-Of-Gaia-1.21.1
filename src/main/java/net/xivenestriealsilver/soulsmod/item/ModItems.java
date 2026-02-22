@@ -8,6 +8,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.xivenestriealsilver.soulsmod.SoulsMod;
 import net.xivenestriealsilver.soulsmod.item.custom.ChiselItem;
 import net.xivenestriealsilver.soulsmod.item.custom.FuelItem;
+import net.xivenestriealsilver.soulsmod.item.custom.ModArmorItem;
 
 import java.util.List;
 
@@ -72,7 +73,7 @@ public class ModItems {
 
 
     public static final DeferredItem<ArmorItem> LAZURITE_HELMET = ITEMS.register("lazurite_helmet", ()->
-            new ArmorItem(ModArmorMaterials.LAZURITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+            new ModArmorItem(ModArmorMaterials.LAZURITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(30))));
 
     public static final DeferredItem<ArmorItem> LAZURITE_CHESTPLATE = ITEMS.register("lazurite_chestplate", ()->
