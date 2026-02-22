@@ -1,5 +1,6 @@
 package net.xivenestriealsilver.soulsmod.datagen;
 
+import net.minecraft.tags.ItemTags;
 import net.xivenestriealsilver.soulsmod.SoulsMod;
 import net.xivenestriealsilver.soulsmod.item.ModItems;
 import net.xivenestriealsilver.soulsmod.util.ModTags;
@@ -27,6 +28,18 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(Items.COAL)
                 .add(Items.STICK)
                 .add(Items.COMPASS);
+
+        tag(ItemTags.SWORDS)
+                .add(ModItems.LAZURITE_SWORD.get());
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.LAZURITE_PICKAXE.get());
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.LAZURITE_SHOVEL.get());
+        tag(ItemTags.AXES)
+                .add(ModItems.LAZURITE_AXE.get());
+        tag(ItemTags.HOES)
+                .add(ModItems.LAZURITE_HOE.get());
+
 
     }
 }
