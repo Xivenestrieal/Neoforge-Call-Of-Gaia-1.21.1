@@ -1,17 +1,25 @@
+package net.xivenestriealsilver.soulsmod.entity;
+
+import net.xivenestriealsilver.soulsmod.SoulsMod;
+import net.xivenestriealsilver.soulsmod.entity.custom.GeckoEntity;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
-import net.xivenestriealsilver.soulsmod.entity.custom.Ent;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredRegister;
 
-public static final RegistryObject<EntityType<Ent>> ENT =
-        ENTITY_TYPES.register("ent",
-                () -> EntityType.Builder
-                        .of(Ent::new, MobCategory.MONSTER)
-                        .sized(0.6f, 1.95f) // width, height
-                        .build("ent"));
+import java.util.function.Supplier;
 
-@SubscribeEvent
-public static void registerAttributes(EntityAttributeCreationEvent event) {
-    event.put(ENT.get(), Ent.createAttributes().build());
+public class ModEntities {
+    public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
+            DeferredRegister.create(BuiltInRegistries.ENTITY_TYPE, SoulsMod.MOD_ID);
+
+    public static final Supplier<EntityType<GeckoEntity>> GECKO =
+            ENTITY_TYPES.register("gecko", () -> EntityType.Builder.of(GeckoEntity::new, MobCategory.CREATURE)
+                    .sized(0.75f, 0.35f).build("gecko"));
+
+
+    public static void register(IEventBus eventBus) {
+        ENTITY_TYPES.register(eventBus);
+    }
 }
