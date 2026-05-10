@@ -10,6 +10,9 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 
 public class ModConfiguredFeatures {
+    public static final ResourceKey<ConfiguredFeature<?, ?>>OVERWORLD_LAZURITE_ORE_KEY = registerKey("lazurite_ore");
+
+
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
 
