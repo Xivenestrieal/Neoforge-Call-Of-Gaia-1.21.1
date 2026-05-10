@@ -6,7 +6,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.DatapackBuiltinEntriesProvider;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
-import net.xivenestriealsilver.call_of_gaia.call_of_gaia;
+import net.xivenestriealsilver.call_of_gaia.CallOfGaia;
 import net.xivenestriealsilver.call_of_gaia.worldgen.ModBiomeModifiers;
 import net.xivenestriealsilver.call_of_gaia.worldgen.ModConfiguredFeatures;
 import net.xivenestriealsilver.call_of_gaia.worldgen.ModPlacedFeatures;
@@ -25,6 +25,6 @@ public class ModDatapackProvider extends DatapackBuiltinEntriesProvider {
             .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap);
 
     public ModDatapackProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, BUILDER, Set.of(call_of_gaia.MOD_ID));
+        super(output, registries, BUILDER, Set.of(CallOfGaia.MOD_ID));
     }
 }

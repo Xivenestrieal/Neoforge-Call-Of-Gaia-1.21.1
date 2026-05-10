@@ -10,7 +10,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.xivenestriealsilver.call_of_gaia.call_of_gaia;
+import net.xivenestriealsilver.call_of_gaia.CallOfGaia;
 import net.xivenestriealsilver.call_of_gaia.block.custom.LazuriteLampBlock;
 import net.xivenestriealsilver.call_of_gaia.block.custom.SeekingBlock;
 import net.xivenestriealsilver.call_of_gaia.item.ModItems;
@@ -18,10 +18,9 @@ import net.xivenestriealsilver.call_of_gaia.item.ModItems;
 import java.util.function.Supplier;
 
 import static net.minecraft.world.item.Items.registerBlock;
-import static net.xivenestriealsilver.call_of_gaia.call_of_gaia.MOD_ID;
 
 public class ModBlocks {
-    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(call_of_gaia.MOD_ID);
+    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(CallOfGaia.MOD_ID);
 
     public static final DeferredBlock<Block> LAZURITE_BLOCK = registerBlock("lazurite_block",
             () -> new Block(BlockBehaviour.Properties.of()

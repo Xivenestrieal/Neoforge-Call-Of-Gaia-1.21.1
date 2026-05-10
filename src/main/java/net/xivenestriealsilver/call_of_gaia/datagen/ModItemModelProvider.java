@@ -1,6 +1,5 @@
 package net.xivenestriealsilver.call_of_gaia.datagen;
 
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -14,7 +13,7 @@ import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
-import net.xivenestriealsilver.call_of_gaia.call_of_gaia;
+import net.xivenestriealsilver.call_of_gaia.CallOfGaia;
 import net.xivenestriealsilver.call_of_gaia.item.ModItems;
 
 import java.util.LinkedHashMap;
@@ -37,7 +36,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     }
 
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
-        super(output, call_of_gaia.MOD_ID, existingFileHelper);
+        super(output, CallOfGaia.MOD_ID, existingFileHelper);
     }
 
     @Override
@@ -91,7 +90,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         // Base (non-trimmed) model
         ItemModelBuilder baseModel = withExistingParent(itemPath, mcLoc("item/generated"))
                 .texture("layer0",
-                        ResourceLocation.fromNamespaceAndPath(call_of_gaia.MOD_ID, "item/" + itemPath));
+                        ResourceLocation.fromNamespaceAndPath(CallOfGaia.MOD_ID, "item/" + itemPath));
 
         TRIM_MATERIALS.forEach((trimMaterial, trimValue) -> {
 
@@ -123,7 +122,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     private ItemModelBuilder handheldItem(DeferredItem<?> item) {
         return withExistingParent(item.getId().getPath(), mcLoc("item/handheld"))
                 .texture("layer0",
-                        ResourceLocation.fromNamespaceAndPath(call_of_gaia.MOD_ID,
+                        ResourceLocation.fromNamespaceAndPath(CallOfGaia.MOD_ID,
                                 "item/" + item.getId().getPath()));
     }
 
@@ -132,21 +131,21 @@ public class ModItemModelProvider extends ItemModelProvider {
     public void buttonItem(DeferredBlock<?> block, DeferredBlock<?> baseBlock) {
         withExistingParent(block.getId().getPath(), mcLoc("block/button_inventory"))
                 .texture("texture",
-                        ResourceLocation.fromNamespaceAndPath(call_of_gaia.MOD_ID,
+                        ResourceLocation.fromNamespaceAndPath(CallOfGaia.MOD_ID,
                                 "block/" + baseBlock.getId().getPath()));
     }
 
     public void fenceItem(DeferredBlock<?> block, DeferredBlock<?> baseBlock) {
         withExistingParent(block.getId().getPath(), mcLoc("block/fence_inventory"))
                 .texture("texture",
-                        ResourceLocation.fromNamespaceAndPath(call_of_gaia.MOD_ID,
+                        ResourceLocation.fromNamespaceAndPath(CallOfGaia.MOD_ID,
                                 "block/" + baseBlock.getId().getPath()));
     }
 
     public void wallItem(DeferredBlock<?> block, DeferredBlock<?> baseBlock) {
         withExistingParent(block.getId().getPath(), mcLoc("block/wall_inventory"))
                 .texture("wall",
-                        ResourceLocation.fromNamespaceAndPath(call_of_gaia.MOD_ID,
+                        ResourceLocation.fromNamespaceAndPath(CallOfGaia.MOD_ID,
                                 "block/" + baseBlock.getId().getPath()));
     }
 }

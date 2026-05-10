@@ -1,7 +1,7 @@
 package net.xivenestriealsilver.call_of_gaia.entity.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import net.xivenestriealsilver.call_of_gaia.call_of_gaia;
+import net.xivenestriealsilver.call_of_gaia.CallOfGaia;
 import net.xivenestriealsilver.call_of_gaia.entity.custom.GeckoEntity;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
@@ -15,7 +15,7 @@ public class GeckoRenderer extends MobRenderer<GeckoEntity, GeckoModel<GeckoEnti
 
     @Override
     public ResourceLocation getTextureLocation(GeckoEntity entity) {
-        return ResourceLocation.fromNamespaceAndPath(call_of_gaia.MOD_ID, "textures/entity/gecko/gecko_blue.png");
+        return ResourceLocation.fromNamespaceAndPath(CallOfGaia.MOD_ID, "textures/entity/gecko/gecko_blue.png");
     }
 
     @Override

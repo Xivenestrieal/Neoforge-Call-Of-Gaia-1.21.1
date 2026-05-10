@@ -4,18 +4,17 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.xivenestriealsilver.call_of_gaia.call_of_gaia;
+import net.xivenestriealsilver.call_of_gaia.CallOfGaia;
 import net.xivenestriealsilver.call_of_gaia.block.ModBlocks;
 
 import java.util.function.Supplier;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
-            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, call_of_gaia.MOD_ID);
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CallOfGaia.MOD_ID);
 
     public static final Supplier<CreativeModeTab> LAZURITE_ITEMS_TAB = CREATIVE_MODE_TAB.register("lazurite_items_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.LAZURITE_INGOT.get()))
@@ -46,7 +45,7 @@ public class ModCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> LAZURITE_BLOCK_TAB = CREATIVE_MODE_TAB.register("lazurite_blocks_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.LAZURITE_BLOCK))
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(call_of_gaia.MOD_ID, "lazurite_items_tab"))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(CallOfGaia.MOD_ID, "lazurite_items_tab"))
                     .title(Component.translatable("creativetab.call_of_gaia.lazurite_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.LAZURITE_BLOCK);

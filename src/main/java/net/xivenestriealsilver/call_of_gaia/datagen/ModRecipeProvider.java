@@ -1,6 +1,6 @@
 package net.xivenestriealsilver.call_of_gaia.datagen;
 
-import net.xivenestriealsilver.call_of_gaia.call_of_gaia;
+import net.xivenestriealsilver.call_of_gaia.CallOfGaia;
 import net.xivenestriealsilver.call_of_gaia.block.ModBlocks;
 import net.xivenestriealsilver.call_of_gaia.item.ModItems;
 import net.minecraft.core.HolderLookup;
@@ -59,7 +59,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                                                                        List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup, String pRecipeName) {
         for(ItemLike itemlike : pIngredients) {
             SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), pCategory, pResult, pExperience, pCookingTime, pCookingSerializer, factory).group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike))
-                    .save(recipeOutput, call_of_gaia.MOD_ID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
+                    .save(recipeOutput, CallOfGaia.MOD_ID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
         }
     }
 }

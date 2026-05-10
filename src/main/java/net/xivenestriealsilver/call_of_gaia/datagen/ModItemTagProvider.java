@@ -1,7 +1,7 @@
 package net.xivenestriealsilver.call_of_gaia.datagen;
 
 import net.minecraft.tags.ItemTags;
-import net.xivenestriealsilver.call_of_gaia.call_of_gaia;
+import net.xivenestriealsilver.call_of_gaia.CallOfGaia;
 import net.xivenestriealsilver.call_of_gaia.item.ModItems;
 import net.xivenestriealsilver.call_of_gaia.util.ModTags;
 import net.minecraft.core.HolderLookup;
@@ -17,7 +17,7 @@ import java.util.concurrent.CompletableFuture;
 public class ModItemTagProvider extends ItemTagsProvider {
     public ModItemTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider,
                               CompletableFuture<TagLookup<Block>> blockTags, @Nullable ExistingFileHelper existingFileHelper) {
-        super(output, lookupProvider, blockTags, call_of_gaia.MOD_ID, existingFileHelper);
+        super(output, lookupProvider, blockTags, CallOfGaia.MOD_ID, existingFileHelper);
     }
 
     @Override

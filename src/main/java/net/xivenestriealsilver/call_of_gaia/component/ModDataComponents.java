@@ -1,6 +1,6 @@
 package net.xivenestriealsilver.call_of_gaia.component;
 
-import net.xivenestriealsilver.call_of_gaia.call_of_gaia;
+import net.xivenestriealsilver.call_of_gaia.CallOfGaia;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponentType;
 import net.neoforged.bus.api.IEventBus;
@@ -11,7 +11,7 @@ import java.util.function.UnaryOperator;
 
 public class ModDataComponents {
     public static final DeferredRegister<DataComponentType<?>> DATA_COMPONENT_TYPES =
-            DeferredRegister.createDataComponents(call_of_gaia.MOD_ID);
+            DeferredRegister.createDataComponents(CallOfGaia.MOD_ID);
 
     public static final DeferredHolder<DataComponentType<?>, DataComponentType<BlockPos>> COORDINATES = register("coordinates",
             builder -> builder.persistent(BlockPos.CODEC));

@@ -2,7 +2,7 @@ package net.xivenestriealsilver.call_of_gaia.entity.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import net.xivenestriealsilver.call_of_gaia.call_of_gaia;
+import net.xivenestriealsilver.call_of_gaia.CallOfGaia;
 import net.xivenestriealsilver.call_of_gaia.entity.custom.GeckoEntity;
 import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
@@ -14,7 +14,7 @@ import net.minecraft.util.Mth;
 
 public class GeckoModel<T extends GeckoEntity> extends HierarchicalModel<T> {
     public static final ModelLayerLocation LAYER_LOCATION =
-            new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(call_of_gaia.MOD_ID, "gecko"), "main");
+            new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(CallOfGaia.MOD_ID, "gecko"), "main");
 
     private final ModelPart body;
     private final ModelPart head;

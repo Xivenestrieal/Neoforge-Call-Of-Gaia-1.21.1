@@ -5,7 +5,7 @@ import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.xivenestriealsilver.call_of_gaia.call_of_gaia;
+import net.xivenestriealsilver.call_of_gaia.CallOfGaia;
 import net.xivenestriealsilver.call_of_gaia.item.custom.ChiselItem;
 import net.xivenestriealsilver.call_of_gaia.item.custom.FuelItem;
 import net.xivenestriealsilver.call_of_gaia.item.custom.ModArmorItem;
@@ -13,7 +13,7 @@ import net.xivenestriealsilver.call_of_gaia.item.custom.ModArmorItem;
 import java.util.List;
 
 public class ModItems {
-    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(call_of_gaia.MOD_ID);
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(CallOfGaia.MOD_ID);
 
     public static final DeferredItem<Item> RAW_LAZURITE = ITEMS.register("raw_lazurite",
             () -> new Item(new Item.Properties()));
