@@ -2,6 +2,7 @@ package net.xivenestriealsilver.call_of_gaia;
 
 import net.xivenestriealsilver.call_of_gaia.block.ModBlocks;
 import net.xivenestriealsilver.call_of_gaia.component.ModDataComponents;
+import net.xivenestriealsilver.call_of_gaia.effect.ModEffects;
 import net.xivenestriealsilver.call_of_gaia.item.ModCreativeModeTabs;
 import net.xivenestriealsilver.call_of_gaia.item.ModItems;
 import org.slf4j.Logger;
@@ -45,6 +46,8 @@ public class CallOfGaia {
         ModBlocks.register(modEventBus);
 
         ModDataComponents.register(modEventBus);
+
+        ModEffects.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
