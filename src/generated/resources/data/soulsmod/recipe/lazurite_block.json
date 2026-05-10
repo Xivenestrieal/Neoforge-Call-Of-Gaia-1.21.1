@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "B": {
-      "item": "soulsmod:lazurite_ingot"
+      "item": "call_of_gaia:lazurite_ingot"
     }
   },
   "pattern": [
@@ -13,6 +13,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "soulsmod:lazurite_block"
+    "id": "call_of_gaia:lazurite_block"
   }
 }

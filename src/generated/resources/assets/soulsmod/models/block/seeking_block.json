@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "soulsmod:block/seeking_block"
+    "all": "call_of_gaia:block/seeking_block"
   }
 }

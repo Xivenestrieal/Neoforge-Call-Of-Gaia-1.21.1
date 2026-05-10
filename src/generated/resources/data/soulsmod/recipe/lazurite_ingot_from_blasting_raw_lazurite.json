@@ -5,10 +5,10 @@
   "experience": 0.25,
   "group": "lazurite_ingot",
   "ingredient": {
-    "item": "soulsmod:raw_lazurite"
+    "item": "call_of_gaia:raw_lazurite"
   },
   "result": {
     "count": 1,
-    "id": "soulsmod:lazurite_ingot"
+    "id": "call_of_gaia:lazurite_ingot"
   }
 }

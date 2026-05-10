@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "soulsmod:block/lazurite_block"
+      "model": "call_of_gaia:block/lazurite_block"
     }
   }
 }

@@ -1,8 +1,8 @@
 {
   "values": [
-    "soulsmod:lazurite_helmet",
-    "soulsmod:lazurite_chestplate",
-    "soulsmod:lazurite_leggings",
-    "soulsmod:lazurite_boots"
+    "call_of_gaia:lazurite_helmet",
+    "call_of_gaia:lazurite_chestplate",
+    "call_of_gaia:lazurite_leggings",
+    "call_of_gaia:lazurite_boots"
   ]
 }

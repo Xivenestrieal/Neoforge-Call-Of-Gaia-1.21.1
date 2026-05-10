@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "soulsmod:item/lazurite_helmet",
+    "layer0": "call_of_gaia:item/lazurite_helmet",
     "layer1": "minecraft:trims/items/helmet_trim_amethyst"
   }
 }

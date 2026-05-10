@@ -1,7 +1,7 @@
 {
   "values": [
-    "soulsmod:lazurite_block",
-    "soulsmod:lazurite_ore",
-    "soulsmod:deepslate_lazurite_ore"
+    "call_of_gaia:lazurite_block",
+    "call_of_gaia:lazurite_ore",
+    "call_of_gaia:deepslate_lazurite_ore"
   ]
 }

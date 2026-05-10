@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "soulsmod:lazurite_block"
+      "item": "call_of_gaia:lazurite_block"
     }
   ],
   "result": {
     "count": 9,
-    "id": "soulsmod:lazurite_ingot"
+    "id": "call_of_gaia:lazurite_ingot"
   }
 }

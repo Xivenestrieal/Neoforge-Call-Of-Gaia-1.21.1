@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "soulsmod:item/raw_lazurite"
+    "layer0": "call_of_gaia:item/raw_lazurite"
   }
 }

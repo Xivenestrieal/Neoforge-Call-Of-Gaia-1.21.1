@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "soulsmod:item/ent_charcoal"
+    "layer0": "call_of_gaia:item/ent_charcoal"
   }
 }

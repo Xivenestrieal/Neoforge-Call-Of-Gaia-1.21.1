@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "soulsmod:block/lazurite_lamp_off"
+    "all": "call_of_gaia:block/lazurite_lamp_off"
   }
 }

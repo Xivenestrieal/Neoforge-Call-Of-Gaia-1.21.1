@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "soulsmod:deepslate_lazurite_ore"
+              "name": "call_of_gaia:deepslate_lazurite_ore"
             },
             {
               "type": "minecraft:item",
@@ -49,7 +49,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "soulsmod:raw_lazurite"
+              "name": "call_of_gaia:raw_lazurite"
             }
           ]
         }
@@ -57,5 +57,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "soulsmod:blocks/deepslate_lazurite_ore"
+  "random_sequence": "call_of_gaia:blocks/deepslate_lazurite_ore"
 }

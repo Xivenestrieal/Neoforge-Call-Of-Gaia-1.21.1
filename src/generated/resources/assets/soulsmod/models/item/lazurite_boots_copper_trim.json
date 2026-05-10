@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "soulsmod:item/lazurite_boots",
+    "layer0": "call_of_gaia:item/lazurite_boots",
     "layer1": "minecraft:trims/items/boots_trim_copper"
   }
 }

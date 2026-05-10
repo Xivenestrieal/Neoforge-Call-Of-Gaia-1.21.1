@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "soulsmod:raw_lazurite"
+            "items": "call_of_gaia:raw_lazurite"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "soulsmod:lazurite_ingot_from_blasting_raw_lazurite"
+        "recipe": "call_of_gaia:lazurite_ingot_from_blasting_raw_lazurite"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "soulsmod:lazurite_ingot_from_blasting_raw_lazurite"
+      "call_of_gaia:lazurite_ingot_from_blasting_raw_lazurite"
     ]
   }
 }

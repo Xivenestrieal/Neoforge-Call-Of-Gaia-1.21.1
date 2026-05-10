@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "soulsmod:item/frozen_flame"
+    "layer0": "call_of_gaia:item/frozen_flame"
   }
 }

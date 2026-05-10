@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "soulsmod:seeking_block"
+          "name": "call_of_gaia:seeking_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "soulsmod:blocks/seeking_block"
+  "random_sequence": "call_of_gaia:blocks/seeking_block"
 }

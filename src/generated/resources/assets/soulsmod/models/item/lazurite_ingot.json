@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "soulsmod:item/lazurite_ingot"
+    "layer0": "call_of_gaia:item/lazurite_ingot"
   }
 }

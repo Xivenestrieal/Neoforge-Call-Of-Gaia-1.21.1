@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "soulsmod:item/lazurite_hoe"
+    "layer0": "call_of_gaia:item/lazurite_hoe"
   }
 }

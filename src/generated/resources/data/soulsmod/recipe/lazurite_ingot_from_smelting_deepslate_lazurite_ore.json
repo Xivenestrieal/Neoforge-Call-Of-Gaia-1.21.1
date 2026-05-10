@@ -5,10 +5,10 @@
   "experience": 0.25,
   "group": "lazurite_ingot",
   "ingredient": {
-    "item": "soulsmod:deepslate_lazurite_ore"
+    "item": "call_of_gaia:deepslate_lazurite_ore"
   },
   "result": {
     "count": 1,
-    "id": "soulsmod:lazurite_ingot"
+    "id": "call_of_gaia:lazurite_ingot"
   }
 }

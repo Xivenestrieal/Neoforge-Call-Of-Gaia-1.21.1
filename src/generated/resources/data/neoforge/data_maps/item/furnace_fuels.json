@@ -1,9 +1,9 @@
 {
   "values": {
-    "soulsmod:ent_charcoal": {
+    "call_of_gaia:ent_charcoal": {
       "burn_time": 1400
     },
-    "soulsmod:frozen_flame": {
+    "call_of_gaia:frozen_flame": {
       "burn_time": 3000
     }
   }

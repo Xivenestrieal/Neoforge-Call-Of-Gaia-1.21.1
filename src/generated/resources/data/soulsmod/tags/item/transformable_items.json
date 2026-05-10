@@ -1,7 +1,7 @@
 {
   "values": [
-    "soulsmod:lazurite_ingot",
-    "soulsmod:raw_lazurite",
+    "call_of_gaia:lazurite_ingot",
+    "call_of_gaia:raw_lazurite",
     "minecraft:coal",
     "minecraft:stick",
     "minecraft:compass"

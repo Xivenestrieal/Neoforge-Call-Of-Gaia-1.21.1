@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "soulsmod:item/corrupted_soul"
+    "layer0": "call_of_gaia:item/corrupted_soul"
   }
 }

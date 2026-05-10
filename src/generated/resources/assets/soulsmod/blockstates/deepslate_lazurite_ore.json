@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "soulsmod:block/deepslate_lazurite_ore"
+      "model": "call_of_gaia:block/deepslate_lazurite_ore"
     }
   }
 }
