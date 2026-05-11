@@ -1,6 +1,6 @@
-// 1.21	2026-02-18T15:12:57.9983718	Loot Tables
-a848a2ea66c38b5b138f41db391541e77e59f0e9 data/call_of_gaia/loot_table/blocks/deepslate_lazurite_ore.json
-16c786c028915cbe56ef07c5543d3c0b74e17e55 data/call_of_gaia/loot_table/blocks/lazurite_block.json
-2b177c012cec0ce67a1463d509d548098189cb27 data/call_of_gaia/loot_table/blocks/lazurite_lamp.json
-5e96c3ab13df4f820f5df12afdb1fe931e58c8bf data/call_of_gaia/loot_table/blocks/lazurite_ore.json
-4d07b8503097ebbdaf0957ca3d25b3755a29d192 data/call_of_gaia/loot_table/blocks/seeking_block.json
+// 1.21	2026-05-11T16:56:35.8643592	Loot Tables
+edf4683e1cefe03a16490a2ed59118be4d9e67f4 data/call_of_gaia/loot_table/blocks/deepslate_lazurite_ore.json
+d7f631eb53636d74a71e15b45a2370000b55a627 data/call_of_gaia/loot_table/blocks/lazurite_block.json
+68a8806333e787358f548c675ce62b16822c5d1b data/call_of_gaia/loot_table/blocks/lazurite_lamp.json
+5cf28cba448575c060616839a4d4a3e6b641248c data/call_of_gaia/loot_table/blocks/lazurite_ore.json
+a1aebecd145c19586210d08ff9c95b560f323fab data/call_of_gaia/loot_table/blocks/seeking_block.json

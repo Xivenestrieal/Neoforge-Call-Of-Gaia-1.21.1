@@ -1,5 +1,7 @@
 package net.xivenestriealsilver.call_of_gaia.worldgen;
 
+import net.minecraft.world.level.levelgen.VerticalAnchor;
+import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
 import net.xivenestriealsilver.call_of_gaia.CallOfGaia;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
@@ -13,11 +15,14 @@ import net.minecraft.world.level.levelgen.placement.PlacementModifier;
 import java.util.List;
 
 public class ModPlacedFeatures {
+    public  static final ResourceKey<PlacedFeature> LAZURITE_ORE_KEY = registerKey("lazurite_ore_placed");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
 
+    register(context, LAZURITE_ORE_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_LAZURITE_ORE_KEY),
+           ModOrePlacement.commonOrePlacement(5, HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(0))));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

@@ -1,5 +1,10 @@
 package net.xivenestriealsilver.call_of_gaia.worldgen;
 
+import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.levelgen.feature.OreFeature;
+import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
+import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 import net.xivenestriealsilver.call_of_gaia.CallOfGaia;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
@@ -8,6 +13,9 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
+import net.xivenestriealsilver.call_of_gaia.block.ModBlocks;
+
+import java.util.List;
 
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>>OVERWORLD_LAZURITE_ORE_KEY = registerKey("lazurite_ore");
@@ -16,6 +24,14 @@ public class ModConfiguredFeatures {
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
 
+        RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
+        RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
+
+        List<OreConfiguration.TargetBlockState> overworldLazuriteOres = List.of(
+                OreConfiguration.target(stoneReplaceables, ModBlocks.LAZURITE_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_LAZURITE_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_LAZURITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldLazuriteOres, 9));
 
     }
 
