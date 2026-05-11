@@ -1,0 +1,8 @@
+{
+  "remove": [
+    "#call_of_gaia:needs_lazurite_tool"
+  ],
+  "values": [
+    "#minecraft:incorrect_for_netherite_tool"
+  ]
+}

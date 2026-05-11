@@ -1,0 +1,8 @@
+// 1.21	2026-05-11T16:56:35.8673761	Tags for minecraft:item mod id call_of_gaia
+894d0826f693401d3cbfb892e85ef2d9a30c3a4d data/call_of_gaia/tags/item/transformable_items.json
+959a11799e2d415ccb3a240ef9b13c065e0c591b data/minecraft/tags/item/axes.json
+e530bbb340c8a76524eec07ee5d28a134ec72591 data/minecraft/tags/item/hoes.json
+48b0a2f22e59d3a9d317b236c1ba6c1e6142df8b data/minecraft/tags/item/pickaxes.json
+31a52050d5fc120d11258e8fbf9e7b272c94a26a data/minecraft/tags/item/shovels.json
+0037e93a2415f409fec00d068adcf764667992a0 data/minecraft/tags/item/swords.json
+5e90bf78c2bbd5989f318dee16b0148cbc997257 data/minecraft/tags/item/trimmable_armor.json

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "call_of_gaia:seeking_block"
+    }
+  ],
+  "result": {
+    "count": 18,
+    "id": "call_of_gaia:lazurite_ingot"
+  }
+}

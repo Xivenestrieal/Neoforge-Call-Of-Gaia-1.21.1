@@ -15,7 +15,7 @@ public class ModEntities {
             DeferredRegister.create(BuiltInRegistries.ENTITY_TYPE, CallOfGaia.MOD_ID);
 
     public static final Supplier<EntityType<GeckoEntity>> GECKO =
-            ENTITY_TYPES.register("gecko", () -> EntityType.Builder.of(GeckoEntity::new, MobCategory.CREATURE)
+            ENTITY_TYPES.register("gecko", () -> EntityType.Builder.of(GeckoEntity::new, MobCategory.MONSTER)
                     .sized(0.75f, 0.35f).build("gecko"));
 
 

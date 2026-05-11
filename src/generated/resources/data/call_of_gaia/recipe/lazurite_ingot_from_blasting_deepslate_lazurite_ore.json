@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 0.25,
+  "group": "lazurite_ingot",
+  "ingredient": {
+    "item": "call_of_gaia:deepslate_lazurite_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "call_of_gaia:lazurite_ingot"
+  }
+}
