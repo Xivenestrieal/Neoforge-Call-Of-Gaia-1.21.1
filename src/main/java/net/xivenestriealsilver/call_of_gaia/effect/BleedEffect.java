@@ -1,7 +1,5 @@
 package net.xivenestriealsilver.call_of_gaia.effect;
 
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
@@ -14,13 +12,12 @@ public class BleedEffect extends MobEffect {
 
     @Override
     public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
-        livingEntity.hurt(livingEntity.damageSources().magic(), livingEntity.getMaxHealth() * 0.15f + 4);
-        livingEntity.removeEffect(BuiltInRegistries.MOB_EFFECT.wrapAsHolder(this));
+        livingEntity.hurt(livingEntity.damageSources().magic(), livingEntity.getMaxHealth() * 0.15f + 1);
         return super.applyEffectTick(livingEntity, amplifier);
     }
 
     @Override
     public boolean shouldApplyEffectTickThisTick(int duration, int amplifier) {
-        return true;
+        return duration % 20 == 0;
     }
 }
