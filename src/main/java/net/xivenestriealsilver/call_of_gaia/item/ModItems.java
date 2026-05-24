@@ -3,9 +3,11 @@ package net.xivenestriealsilver.call_of_gaia.item;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.xivenestriealsilver.call_of_gaia.CallOfGaia;
+import net.xivenestriealsilver.call_of_gaia.entity.ModEntities;
 import net.xivenestriealsilver.call_of_gaia.item.custom.ChiselItem;
 import net.xivenestriealsilver.call_of_gaia.item.custom.FuelItem;
 import net.xivenestriealsilver.call_of_gaia.item.custom.ModArmorItem;
@@ -87,6 +89,10 @@ public class ModItems {
     public static final DeferredItem<ArmorItem> LAZURITE_BOOTS = ITEMS.register("lazurite_boots", ()->
             new ArmorItem(ModArmorMaterials.LAZURITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(30))));
+
+    public static final DeferredItem<Item> GECKO_SPAWN_EGG = ITEMS.register("gecko_spawn_egg",
+            ()-> new DeferredSpawnEggItem(ModEntities.GECKO, 0x31afaf, 0xffac00,
+                    new Item.Properties()));
 
 
 

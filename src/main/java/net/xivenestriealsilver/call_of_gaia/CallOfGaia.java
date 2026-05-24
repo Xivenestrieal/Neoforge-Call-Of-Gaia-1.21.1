@@ -1,9 +1,11 @@
 package net.xivenestriealsilver.call_of_gaia;
 
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.xivenestriealsilver.call_of_gaia.block.ModBlocks;
 import net.xivenestriealsilver.call_of_gaia.component.ModDataComponents;
 import net.xivenestriealsilver.call_of_gaia.effect.ModEffects;
 import net.xivenestriealsilver.call_of_gaia.entity.ModEntities;
+import net.xivenestriealsilver.call_of_gaia.entity.client.GeckoRenderer;
 import net.xivenestriealsilver.call_of_gaia.item.ModCreativeModeTabs;
 import net.xivenestriealsilver.call_of_gaia.item.ModItems;
 import org.slf4j.Logger;
@@ -80,6 +82,7 @@ public class CallOfGaia {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
 
+            EntityRenderers.register(ModEntities.GECKO.get(), GeckoRenderer::new);
         }
     }
 }

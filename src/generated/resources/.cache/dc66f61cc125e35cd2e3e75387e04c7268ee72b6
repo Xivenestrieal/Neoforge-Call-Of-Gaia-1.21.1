@@ -1,8 +1,9 @@
-// 1.21	2026-05-11T16:56:35.8602466	Item Models: call_of_gaia
+// 1.21	2026-05-24T12:40:04.001912	Item Models: call_of_gaia
 a4530b25b48f092d31f127e811b3e0ba7fe21987 assets/call_of_gaia/models/item/chisel.json
 b63b71fe7d03d1c58e1c39613739733485a4981f assets/call_of_gaia/models/item/corrupted_soul.json
 32979be930639b8d5c2d7391983ab4fff3fe0574 assets/call_of_gaia/models/item/ent_charcoal.json
 097a0ab6da6edbff9fbf6e27b9ff9a596d72c422 assets/call_of_gaia/models/item/frozen_flame.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/call_of_gaia/models/item/gecko_spawn_egg.json
 89e794df10093cc2d398c09676c62b3cb44b527d assets/call_of_gaia/models/item/hogyoku_soul.json
 9ca200ac9aab0dbf0d5edc04e93a4df3a8291c55 assets/call_of_gaia/models/item/lazurite_axe.json
 ae94ba1857c2a408978fb91d9e36f3f089d49bbd assets/call_of_gaia/models/item/lazurite_boots.json

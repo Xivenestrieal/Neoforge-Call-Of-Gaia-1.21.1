@@ -40,5 +40,8 @@
   "tooltip.call_of_gaia.chisel.shift_down": "This item can chisel Blocks into Bricks",
   "tooltip.call_of_gaia.chisel": "Press §eShift§r for more Information",
 
-  "item.call_of_gaia.seeking_eyes.tooltip": "The ever seeking eyes, constantly looking for a §9place§r to belong"
+  "item.call_of_gaia.seeking_eyes.tooltip": "The ever seeking eyes, constantly looking for a §9place§r to belong",
+
+  "entity.mccourse.gecko": "Gecko",
+  "item.call_of_gaia.gecko_spawn_egg": "Gecko Spawn Egg"
 }

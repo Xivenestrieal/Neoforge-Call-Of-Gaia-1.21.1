@@ -30,6 +30,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ENT_CHARCOAL);
                         output.accept(ModItems.FROZEN_FLAME);
                         output.accept(ModItems.CHISEL);
+                        output.accept(ModItems.GECKO_SPAWN_EGG);
 
                         output.accept(ModItems.LAZURITE_SWORD);
                         output.accept(ModItems.LAZURITE_PICKAXE);

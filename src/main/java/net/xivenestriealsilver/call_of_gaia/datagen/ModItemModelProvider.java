@@ -69,6 +69,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.LAZURITE_CHESTPLATE);
         trimmedArmorItem(ModItems.LAZURITE_LEGGINGS);
         trimmedArmorItem(ModItems.LAZURITE_BOOTS);
+
+        withExistingParent(ModItems.GECKO_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+
     }
 
     /* -------------------- ARMOR TRIMS -------------------- */
