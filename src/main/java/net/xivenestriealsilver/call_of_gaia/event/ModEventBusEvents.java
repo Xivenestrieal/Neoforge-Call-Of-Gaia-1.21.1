@@ -8,6 +8,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
+import net.xivenestriealsilver.call_of_gaia.entity.custom.ZaaraEntity;
 
 @EventBusSubscriber(modid = CallOfGaia.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class ModEventBusEvents {
@@ -19,5 +20,6 @@ public class ModEventBusEvents {
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event) {
         event.put(ModEntities.GECKO.get(), GeckoEntity.createAttributes().build());
+        event.put(ModEntities.ZAARA.get(), ZaaraEntity.createAttributes().build());
     }
 }

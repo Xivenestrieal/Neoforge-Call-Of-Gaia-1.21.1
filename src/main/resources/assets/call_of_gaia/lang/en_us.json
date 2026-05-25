@@ -44,5 +44,10 @@
   "item.call_of_gaia.seeking_eyes.tooltip": "The ever seeking eyes, constantly looking for a §9place§r to belong",
 
   "entity.mccourse.gecko": "Gecko",
+  "entity.mccourse.zaara": "Zaara, The Frozen Monarch",
+  "entity.call_of_gaia.gecko": "Gecko",
+  "entity.call_of_gaia.zaara": "Zaara, The Frozen Monarch",
+
+
   "item.call_of_gaia.gecko_spawn_egg": "Gecko Spawn Egg"
 }

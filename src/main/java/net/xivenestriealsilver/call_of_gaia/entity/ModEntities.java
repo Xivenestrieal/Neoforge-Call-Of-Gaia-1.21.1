@@ -7,6 +7,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.xivenestriealsilver.call_of_gaia.entity.custom.ZaaraEntity;
 
 import java.util.function.Supplier;
 
@@ -17,6 +18,11 @@ public class ModEntities {
     public static final Supplier<EntityType<GeckoEntity>> GECKO =
             ENTITY_TYPES.register("gecko", () -> EntityType.Builder.of(GeckoEntity::new, MobCategory.MONSTER)
                     .sized(0.75f, 0.35f).build("gecko"));
+
+    public static final Supplier<EntityType<ZaaraEntity>> ZAARA =
+            ENTITY_TYPES.register("zaara", () -> EntityType.Builder.of(ZaaraEntity::new, MobCategory.MONSTER)
+                    .sized(1f, 2.5f).build("zaara"));
+
 
 
     public static void register(IEventBus eventBus) {
