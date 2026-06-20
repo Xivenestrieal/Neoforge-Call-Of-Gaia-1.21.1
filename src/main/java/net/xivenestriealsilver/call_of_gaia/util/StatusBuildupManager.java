@@ -1,6 +1,5 @@
 package net.xivenestriealsilver.call_of_gaia.util;
 
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.player.Player;
 import net.xivenestriealsilver.call_of_gaia.effect.ModEffects;

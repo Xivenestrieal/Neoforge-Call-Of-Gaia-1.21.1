@@ -57,11 +57,11 @@ public class ZaaraEntity extends Monster {
     public static AttributeSupplier.Builder createAttributes() {
         return Monster.createMonsterAttributes()
                 .add(Attributes.MAX_HEALTH, 300D)
-                .add(Attributes.MOVEMENT_SPEED, 0.3D)
+                .add(Attributes.MOVEMENT_SPEED, 1D)
                 .add(Attributes.FOLLOW_RANGE, 40D)
                 .add(Attributes.ATTACK_DAMAGE, 8D)
                 .add(Attributes.ARMOR, 10D)
-                .add(Attributes.KNOCKBACK_RESISTANCE, 1.0D);
+                .add(Attributes.KNOCKBACK_RESISTANCE, 0.9D);
     }
 
     @Override
