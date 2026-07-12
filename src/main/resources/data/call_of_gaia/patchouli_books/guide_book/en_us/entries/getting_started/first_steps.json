@@ -1,0 +1,16 @@
+{
+  "name": "First Steps",
+  "icon": "minecraft:book",
+  "category": "call_of_gaia:getting_started",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(bold)The Guide Book$() is your companion throughout Gaia. It updates as you discover new things, unlocking pages as you progress.$(br2)Right-click to open it at any time."
+    },
+    {
+      "type": "text",
+      "text": "$(bold)Keybinds$()$(br)Spell casting, ability activation, and other actions are bound to keys you can configure in $(italic)Options > Controls$(). Check there first if something isn't working."
+    }
+  ]
+}

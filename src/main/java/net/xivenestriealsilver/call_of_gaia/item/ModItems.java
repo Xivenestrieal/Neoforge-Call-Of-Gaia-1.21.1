@@ -10,7 +10,6 @@ import net.xivenestriealsilver.call_of_gaia.CallOfGaia;
 import net.xivenestriealsilver.call_of_gaia.entity.ModEntities;
 import net.xivenestriealsilver.call_of_gaia.item.custom.ChiselItem;
 import net.xivenestriealsilver.call_of_gaia.item.custom.FuelItem;
-import net.xivenestriealsilver.call_of_gaia.item.custom.GuideBookItem;
 import net.xivenestriealsilver.call_of_gaia.item.custom.ModArmorItem;
 
 import java.util.List;
@@ -98,8 +97,6 @@ public class ModItems {
 
 
 
-    public static final DeferredItem<GuideBookItem> GUIDE_BOOK = ITEMS.register("guide_book", () ->
-            new GuideBookItem(new Item.Properties().stacksTo(1)));
 
 
 

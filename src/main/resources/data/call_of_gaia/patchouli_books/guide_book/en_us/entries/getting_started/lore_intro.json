@@ -1,0 +1,13 @@
+{
+  "name": "The World of Gaia",
+  "icon": "minecraft:written_book",
+  "category": "call_of_gaia:getting_started",
+  "sortnum": 1,
+  "advancement": "call_of_gaia:lore/intro_unlocked",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(italic)\"The land remembers what its people have forgotten...\"$()$(br2)Placeholder lore text. Fill this in with your world's backstory."
+    }
+  ]
+}
