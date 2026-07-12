@@ -90,8 +90,8 @@ description='''${mod_description}'''
 [[dependencies.${mod_id}]]
     modId="patchouli"
     type="required"
-    versionRange="[1.21.1-92-NEOFORGE,)"
-    ordering="AFTER"
+    versionRange="[1.21.1-92-NEOFORGE,]"
+    ordering="NONE"
     side="BOTH"
 
 
