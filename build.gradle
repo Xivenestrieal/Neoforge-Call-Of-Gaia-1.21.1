@@ -18,8 +18,10 @@ version = mod_version
 group = mod_group_id
 
 repositories {
-    maven { url = "https://maven.blamejared.com" }
-
+    maven {
+        url = "https://maven.blamejared.com"
+    }
+    mavenCentral()
 }
 
 base {
@@ -113,8 +115,8 @@ configurations {
 }
 
 dependencies {
-    compileOnly "vazkii.patchouli:patchouli-neoforge:1.21.1-92-NEOFORGE:api"
-    localRuntime "vazkii.patchouli:patchouli-neoforge:1.21.1-92-NEOFORGE"
+    compileOnly "vazkii.patchouli:Patchouli:1.21.1-92-NEOFORGE:api"
+    runtimeOnly "vazkii.patchouli:Patchouli:1.21.1-92-NEOFORGE"
 
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
