@@ -24,7 +24,10 @@
 
   "item.call_of_gaia.chisel": "Chisel",
 
-  "item.call_of_gaia.guide_book": "Tome Of Something",
+  "item.call_of_gaia.guide_book": "The Call of Gaia",
+  "item.call_of_gaia.guide_book.landing": "Welcome to the world of Gaia. This book will guide you...",
+  "item.call_of_gaia.guide_book.subtitle": "A Guide to the World of Gaia",
+
 
 
   "effect.call_of_gaia.bleed": "Bleed",

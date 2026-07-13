@@ -43,7 +43,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.LAZURITE_LEGGINGS);
                         output.accept(ModItems.LAZURITE_BOOTS);
 
-                       // output.accept(ModItems.GUIDE_BOOK);
+                        output.accept(ModItems.GUIDE_BOOK);
                     }).build());
 
     public static final Supplier<CreativeModeTab> LAZURITE_BLOCK_TAB = CREATIVE_MODE_TAB.register("lazurite_blocks_tab",

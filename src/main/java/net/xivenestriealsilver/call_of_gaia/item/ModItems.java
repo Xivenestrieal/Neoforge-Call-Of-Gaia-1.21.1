@@ -96,6 +96,12 @@ public class ModItems {
 
 
 
+    public static final DeferredItem<Item> GUIDE_BOOK = ITEMS.register("guide_book",
+            () -> new Item(new Item.Properties()));
+
+
+
+
 
 
 
