@@ -57,6 +57,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.SEEKING_EYES.get());
         basicItem(ModItems.LAZURITE_KEY.get());
 
+        //basicItem(ModItems.GUIDE_BOOK.get());
+
         // Tools
         handheldItem(ModItems.LAZURITE_SWORD);
         handheldItem(ModItems.LAZURITE_PICKAXE);
