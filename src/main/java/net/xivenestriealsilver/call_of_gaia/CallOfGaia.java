@@ -6,6 +6,7 @@ import net.xivenestriealsilver.call_of_gaia.component.ModDataComponents;
 import net.xivenestriealsilver.call_of_gaia.effect.ModEffects;
 import net.xivenestriealsilver.call_of_gaia.entity.ModEntities;
 import net.xivenestriealsilver.call_of_gaia.entity.client.GeckoRenderer;
+import net.xivenestriealsilver.call_of_gaia.entity.client.IceSpearProjectileRenderer;
 import net.xivenestriealsilver.call_of_gaia.entity.client.ZaaraRenderer;
 import net.xivenestriealsilver.call_of_gaia.item.ModCreativeModeTabs;
 import net.xivenestriealsilver.call_of_gaia.item.ModItems;
@@ -78,14 +79,14 @@ public class CallOfGaia {
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @EventBusSubscriber(modid = CallOfGaia.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @EventBusSubscriber(modid = CallOfGaia.MOD_ID, value = Dist.CLIENT)
     static class ClientModEvents {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
 
             EntityRenderers.register(ModEntities.GECKO.get(), GeckoRenderer::new);
-
             EntityRenderers.register(ModEntities.ZAARA.get(), ZaaraRenderer::new);
+            EntityRenderers.register(ModEntities.ICE_SPEAR.get(), IceSpearProjectileRenderer::new);
         }
     }
 }

@@ -38,6 +38,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.LAZURITE_AXE);
                         output.accept(ModItems.LAZURITE_HOE);
 
+                        output.accept(ModItems.ICE_SPEAR);
+
                         output.accept(ModItems.LAZURITE_HELMET);
                         output.accept(ModItems.LAZURITE_CHESTPLATE);
                         output.accept(ModItems.LAZURITE_LEGGINGS);

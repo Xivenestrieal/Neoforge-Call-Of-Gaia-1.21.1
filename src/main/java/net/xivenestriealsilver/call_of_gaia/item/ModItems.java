@@ -10,6 +10,7 @@ import net.xivenestriealsilver.call_of_gaia.CallOfGaia;
 import net.xivenestriealsilver.call_of_gaia.entity.ModEntities;
 import net.xivenestriealsilver.call_of_gaia.item.custom.ChiselItem;
 import net.xivenestriealsilver.call_of_gaia.item.custom.FuelItem;
+import net.xivenestriealsilver.call_of_gaia.item.custom.IceSpearItem;
 import net.xivenestriealsilver.call_of_gaia.item.custom.ModArmorItem;
 
 import java.util.List;
@@ -93,6 +94,11 @@ public class ModItems {
     public static final DeferredItem<Item> GECKO_SPAWN_EGG = ITEMS.register("gecko_spawn_egg",
             ()-> new DeferredSpawnEggItem(ModEntities.GECKO, 0x31afaf, 0xffac00,
                     new Item.Properties()));
+
+    public static final DeferredItem<Item> ICE_SPEAR = ITEMS.register("ice_spear",
+            ()-> new IceSpearItem(new Item.Properties().stacksTo(4)));
+
+
 
 
 

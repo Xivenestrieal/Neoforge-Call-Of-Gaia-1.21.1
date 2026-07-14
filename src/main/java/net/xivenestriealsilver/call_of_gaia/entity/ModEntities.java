@@ -7,6 +7,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.xivenestriealsilver.call_of_gaia.entity.custom.IceSpearProjectileEntity;
 import net.xivenestriealsilver.call_of_gaia.entity.custom.ZaaraEntity;
 
 import java.util.function.Supplier;
@@ -22,6 +23,10 @@ public class ModEntities {
     public static final Supplier<EntityType<ZaaraEntity>> ZAARA =
             ENTITY_TYPES.register("zaara", () -> EntityType.Builder.of(ZaaraEntity::new, MobCategory.MONSTER)
                     .sized(1f, 2.5f).build("zaara"));
+
+    public static final Supplier<EntityType<IceSpearProjectileEntity>> ICE_SPEAR =
+            ENTITY_TYPES.register("ice_spear", () -> EntityType.Builder.<IceSpearProjectileEntity>of(IceSpearProjectileEntity::new, MobCategory.MISC)
+                    .sized(1.0f, 2.3f).build("ice_spear"));
 
 
 

@@ -12,6 +12,9 @@
   "item.call_of_gaia.lazurite_axe": "Lazurite Axe",
   "item.call_of_gaia.lazurite_hoe": "Lazurite Hoe",
 
+  "item.call_of_gaia.ice_spear": "Ice Spear",
+
+
   "item.call_of_gaia.lazurite_helmet": "Lazurite Helmet",
   "item.call_of_gaia.lazurite_chestplate": "Lazurite Chestplate",
   "item.call_of_gaia.lazurite_leggings": "Lazurite Leggings",
@@ -53,6 +56,9 @@
   "entity.mccourse.zaara": "Zaara, The Frozen Monarch",
   "entity.call_of_gaia.gecko": "Gecko",
   "entity.call_of_gaia.zaara": "Zaara, The Frozen Monarch",
+
+  "entity.mccourse.ice_spear": "Ice Spear",
+
 
 
   "item.call_of_gaia.gecko_spawn_egg": "Gecko Spawn Egg"
