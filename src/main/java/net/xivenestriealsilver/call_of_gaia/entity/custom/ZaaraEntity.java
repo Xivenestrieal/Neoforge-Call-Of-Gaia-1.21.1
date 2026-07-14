@@ -1,8 +1,12 @@
 package net.xivenestriealsilver.call_of_gaia.entity.custom;
 
+import net.minecraft.network.chat.Component;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.server.level.ServerBossEvent;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.BossEvent;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.entity.EntityType;
@@ -21,6 +25,9 @@ public class ZaaraEntity extends Monster {
 
     private static final EntityDataAccessor<Boolean> PHASE_TWO =
             SynchedEntityData.defineId(ZaaraEntity.class, EntityDataSerializers.BOOLEAN);
+
+    private  final ServerBossEvent bossEvent = new ServerBossEvent(Component.literal("Zaara, Monarch Of Frost"),
+            BossEvent.BossBarColor.BLUE, BossEvent.BossBarOverlay.NOTCHED_10);
 
     private final ThreatManager threatManager = new ThreatManager();
 
@@ -120,5 +127,26 @@ public class ZaaraEntity extends Monster {
         if (this.level().isClientSide()) {
             setupAnimationStates();
         }
+    }
+
+    //Boss Bar
+
+
+    @Override
+    public void startSeenByPlayer(ServerPlayer serverPlayer) {
+        super.startSeenByPlayer(serverPlayer);
+        this.bossEvent.addPlayer(serverPlayer);
+    }
+
+    @Override
+    public void stopSeenByPlayer(ServerPlayer serverPlayer) {
+        super.stopSeenByPlayer(serverPlayer);
+        this.bossEvent.removePlayer(serverPlayer);
+    }
+
+    @Override
+    public void aiStep() {
+        super.aiStep();
+        this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
     }
 }
