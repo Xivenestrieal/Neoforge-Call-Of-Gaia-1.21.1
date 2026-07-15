@@ -1,4 +1,4 @@
-package net.xivenestriealsilver.call_of_gaia.entity.custom;
+package net.xivenestriealsilver.call_of_gaia.entity.custom.zaara;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.syncher.EntityDataAccessor;

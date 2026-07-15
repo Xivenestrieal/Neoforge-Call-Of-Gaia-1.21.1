@@ -9,7 +9,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
-import net.xivenestriealsilver.call_of_gaia.entity.custom.ZaaraEntity;
+import net.xivenestriealsilver.call_of_gaia.entity.custom.zaara.ZaaraEntity;
 
 @EventBusSubscriber(modid = CallOfGaia.MOD_ID)
 public class ModEventBusEvents {

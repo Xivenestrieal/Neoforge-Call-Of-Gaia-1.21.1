@@ -10,7 +10,7 @@ import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.xivenestriealsilver.call_of_gaia.CallOfGaia;
-import net.xivenestriealsilver.call_of_gaia.entity.custom.ZaaraEntity;
+import net.xivenestriealsilver.call_of_gaia.entity.custom.zaara.ZaaraEntity;
 
 public class ZaaraModel<T extends ZaaraEntity> extends HierarchicalModel<T> {
     public static final ModelLayerLocation LAYER_LOCATION =

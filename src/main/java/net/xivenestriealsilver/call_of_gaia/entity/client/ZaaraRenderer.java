@@ -6,7 +6,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
 import net.xivenestriealsilver.call_of_gaia.CallOfGaia;
-import net.xivenestriealsilver.call_of_gaia.entity.custom.ZaaraEntity;
+import net.xivenestriealsilver.call_of_gaia.entity.custom.zaara.ZaaraEntity;
 
 public class ZaaraRenderer extends MobRenderer<ZaaraEntity, ZaaraModel<ZaaraEntity>> {
     public ZaaraRenderer(EntityRendererProvider.Context context) {

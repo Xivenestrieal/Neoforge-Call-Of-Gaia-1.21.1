@@ -8,7 +8,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.xivenestriealsilver.call_of_gaia.entity.custom.IceSpearProjectileEntity;
-import net.xivenestriealsilver.call_of_gaia.entity.custom.ZaaraEntity;
+import net.xivenestriealsilver.call_of_gaia.entity.custom.zaara.ZaaraEntity;
 
 import java.util.function.Supplier;
 
