@@ -1,8 +1,8 @@
 package net.xivenestriealsilver.call_of_gaia.handlers;
 
 import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.tags.DamageTypeTags;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -10,15 +10,15 @@ import net.neoforged.neoforge.event.entity.EntityInvulnerabilityCheckEvent;
 import net.xivenestriealsilver.call_of_gaia.item.ModItems;
 
 import java.util.Set;
+import java.util.function.Supplier;
 
-// Simply pass the modid; NeoForge handles the rest
-@EventBusSubscriber(modid = "your_mod_id")
+@EventBusSubscriber(modid = "call_of_gaia")
 public class BlastResistantItemHandler {
 
-    private static final String TARGET_PACKAGE = "net.xivenestriealsilver.call_of_gaia.items.custom.tarot_cards";
+    private static final String TARGET_PACKAGE = "net.xivenestriealsilver.call_of_gaia.item.custom.tarot_cards";
 
-    private static final Set<Item> SINGULAR_BLAST_RESISTANT_ITEMS = Set.of(
-            ModItems.HOGYOKU_SOUL.get()
+    private static final Set<Supplier<Item>> SINGULAR_BLAST_RESISTANT_ITEMS = Set.of(
+            ModItems.HOGYOKU_SOUL
     );
 
     @SubscribeEvent
@@ -27,9 +27,13 @@ public class BlastResistantItemHandler {
             ItemStack stack = itemEntity.getItem();
             Item item = stack.getItem();
 
+            // 1. Check Package Approach
             String itemPackage = item.getClass().getPackageName();
             boolean isFromTargetPackage = itemPackage.startsWith(TARGET_PACKAGE);
-            boolean isSingularMatch = SINGULAR_BLAST_RESISTANT_ITEMS.contains(item);
+
+            // 2. Check Singular Approach safely using stream matching
+            boolean isSingularMatch = SINGULAR_BLAST_RESISTANT_ITEMS.stream()
+                    .anyMatch(supplier -> supplier.get() == item);
 
             if (isFromTargetPackage || isSingularMatch) {
                 if (event.getSource().is(DamageTypeTags.IS_EXPLOSION)) {
