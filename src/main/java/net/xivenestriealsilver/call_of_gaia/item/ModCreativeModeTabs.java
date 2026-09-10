@@ -46,6 +46,28 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.LAZURITE_BOOTS);
 
                         output.accept(ModItems.THE_FOOL_CARD.get());
+                        output.accept(ModItems.THE_MAGICIAN_CARD.get());
+                        output.accept(ModItems.THE_HIGH_PRIESTESS_CARD.get());
+                        output.accept(ModItems.THE_EMPRESS_CARD.get());
+                        output.accept(ModItems.THE_EMPEROR_CARD.get());
+                        output.accept(ModItems.THE_HIEROPHANT_CARD.get());
+                        output.accept(ModItems.THE_LOVERS_CARD.get());
+                        output.accept(ModItems.THE_CHARIOT_CARD.get());
+                        output.accept(ModItems.STRENGTH_CARD.get());
+                        output.accept(ModItems.THE_HERMIT_CARD.get());
+                        output.accept(ModItems.WHEEL_OF_FORTUNE_CARD.get());
+                        output.accept(ModItems.JUSTICE_CARD.get());
+                        output.accept(ModItems.THE_HANGED_MAN_CARD.get());
+                        output.accept(ModItems.DEATH_CARD.get());
+                        output.accept(ModItems.TEMPERANCE_CARD.get());
+                        output.accept(ModItems.THE_DEVIL_CARD.get());
+                        output.accept(ModItems.THE_TOWER_CARD.get());
+                        output.accept(ModItems.THE_STAR_CARD.get());
+                        output.accept(ModItems.THE_MOON_CARD.get());
+                        output.accept(ModItems.THE_SUN_CARD.get());
+                        output.accept(ModItems.JUDGEMENT_CARD.get());
+                        output.accept(ModItems.THE_WORLD_CARD.get());
+
 
                       //  output.accept(ModItems.GUIDE_BOOK);
                     }).build());

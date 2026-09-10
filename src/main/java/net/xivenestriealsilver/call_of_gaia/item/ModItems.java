@@ -65,40 +65,64 @@ public class ModItems {
     public static final DeferredItem<Item> THE_MAGICIAN_CARD = ITEMS.register("the_magician_card",
             () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
 
-    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+    public static final DeferredItem<Item> THE_HIGH_PRIESTESS_CARD = ITEMS.register("the_high_priestess_card",
             () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
 
-    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+    public static final DeferredItem<Item> THE_EMPRESS_CARD = ITEMS.register("the_empress_card",
             () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
 
-    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+    public static final DeferredItem<Item> THE_EMPEROR_CARD = ITEMS.register("the_emperor_card",
             () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
 
-    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+    public static final DeferredItem<Item> THE_HIEROPHANT_CARD = ITEMS.register("the_hierophant_card",
             () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
 
-    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+    public static final DeferredItem<Item> THE_LOVERS_CARD = ITEMS.register("the_lovers_card",
             () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
 
-    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+    public static final DeferredItem<Item> THE_CHARIOT_CARD = ITEMS.register("the_chariot_card",
             () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
 
-    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+    public static final DeferredItem<Item> STRENGTH_CARD = ITEMS.register("strength_card",
             () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
 
-    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+    public static final DeferredItem<Item> THE_HERMIT_CARD = ITEMS.register("the_hermit_card",
             () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
 
-    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+    public static final DeferredItem<Item> WHEEL_OF_FORTUNE_CARD = ITEMS.register("wheel_of_fortune_card",
             () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
 
-    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+    public static final DeferredItem<Item> JUSTICE_CARD = ITEMS.register("justice_card",
             () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
 
-    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+    public static final DeferredItem<Item> THE_HANGED_MAN_CARD = ITEMS.register("the_hanged_man_card",
             () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
 
-    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+    public static final DeferredItem<Item> DEATH_CARD = ITEMS.register("death_card",
+            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+
+    public static final DeferredItem<Item> TEMPERANCE_CARD = ITEMS.register("temperance_card",
+            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+
+    public static final DeferredItem<Item> THE_DEVIL_CARD = ITEMS.register("the_devil_card",
+            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+
+    public static final DeferredItem<Item> THE_TOWER_CARD = ITEMS.register("the_tower_card",
+            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+
+    public static final DeferredItem<Item> THE_STAR_CARD = ITEMS.register("the_star_card",
+            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+
+    public static final DeferredItem<Item> THE_MOON_CARD = ITEMS.register("the_moon_card",
+            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+
+    public static final DeferredItem<Item> THE_SUN_CARD = ITEMS.register("the_sun_card",
+            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+
+    public static final DeferredItem<Item> JUDGEMENT_CARD = ITEMS.register("judgement_card",
+            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+
+    public static final DeferredItem<Item> THE_WORLD_CARD = ITEMS.register("the_world_card",
             () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
 
 
