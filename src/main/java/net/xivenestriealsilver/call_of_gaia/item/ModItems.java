@@ -8,10 +8,8 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.xivenestriealsilver.call_of_gaia.CallOfGaia;
 import net.xivenestriealsilver.call_of_gaia.entity.ModEntities;
-import net.xivenestriealsilver.call_of_gaia.item.custom.ChiselItem;
-import net.xivenestriealsilver.call_of_gaia.item.custom.FuelItem;
-import net.xivenestriealsilver.call_of_gaia.item.custom.IceSpearItem;
-import net.xivenestriealsilver.call_of_gaia.item.custom.ModArmorItem;
+import net.xivenestriealsilver.call_of_gaia.item.custom.*;
+import net.xivenestriealsilver.call_of_gaia.item.custom.tarot_cards.TheFoolCardItem;
 
 import java.util.List;
 
@@ -56,6 +54,56 @@ public class ModItems {
 
     public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
             () -> new ChiselItem(new Item.Properties().durability(50)));
+
+
+    // TAROT CARDS
+
+
+    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+
+    public static final DeferredItem<Item> THE_MAGICIAN_CARD = ITEMS.register("the_magician_card",
+            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+
+    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+
+    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+
+    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+
+    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+
+    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+
+    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+
+    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+
+    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+
+    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+
+    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+
+    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+
+    public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
+            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+
+
+
+
 
 
 

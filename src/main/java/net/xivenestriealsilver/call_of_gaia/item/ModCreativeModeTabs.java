@@ -45,6 +45,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.LAZURITE_LEGGINGS);
                         output.accept(ModItems.LAZURITE_BOOTS);
 
+                        output.accept(ModItems.THE_FOOL_CARD.get());
+
                       //  output.accept(ModItems.GUIDE_BOOK);
                     }).build());
 
