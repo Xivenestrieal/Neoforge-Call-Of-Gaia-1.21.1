@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lazurite_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "call_of_gaia:lazurite_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "call_of_gaia:lazurite_sword"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lazurite_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "call_of_gaia:lazurite_sword"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "call_of_gaia:lazurite_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " BB",
+    " B ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "call_of_gaia:lazurite_hoe"
+  }
+}
