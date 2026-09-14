@@ -31,7 +31,7 @@ public class TheEmperorCardItem extends Item implements ICurioItem {
             slotContext.entity().getAttribute(Attributes.ATTACK_DAMAGE).addTransientModifier(modifier);
 
             slotContext.entity().sendSystemMessage(
-                    Component.literal("You feel the raw power of the tarot card surge through you!")
+                    Component.literal("Emperor!")
             );
         }
     }
@@ -42,7 +42,7 @@ public class TheEmperorCardItem extends Item implements ICurioItem {
             slotContext.entity().getAttribute(Attributes.ATTACK_DAMAGE).removeModifier(STRENGTH_MODIFIER_ID);
 
             slotContext.entity().sendSystemMessage(
-                    Component.literal("The tarot card's power fades away.")
+                    Component.literal("emperor.")
             );
         }
     }

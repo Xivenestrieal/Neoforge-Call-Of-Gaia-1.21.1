@@ -12,7 +12,7 @@ import top.theillusivec4.curios.api.type.capability.ICurioItem;
 public class TheFoolCardItem extends Item implements ICurioItem {
 
     private static final ResourceLocation STRENGTH_MODIFIER_ID =
-            ResourceLocation.fromNamespaceAndPath("call_of_gaia", "tarot_strength_boost");
+            ResourceLocation.fromNamespaceAndPath("call_of_gaia", "tarot_fool_strength_boost");
 
     public TheFoolCardItem(Properties properties) {
         super(properties);
@@ -31,7 +31,7 @@ public class TheFoolCardItem extends Item implements ICurioItem {
             slotContext.entity().getAttribute(Attributes.ATTACK_DAMAGE).addTransientModifier(modifier);
 
             slotContext.entity().sendSystemMessage(
-                    Component.literal("You feel the raw power of the tarot card surge through you!")
+                    Component.literal("Fool!")
             );
         }
     }
@@ -42,7 +42,7 @@ public class TheFoolCardItem extends Item implements ICurioItem {
             slotContext.entity().getAttribute(Attributes.ATTACK_DAMAGE).removeModifier(STRENGTH_MODIFIER_ID);
 
             slotContext.entity().sendSystemMessage(
-                    Component.literal("The tarot card's power fades away.")
+                    Component.literal("Fool.")
             );
         }
     }

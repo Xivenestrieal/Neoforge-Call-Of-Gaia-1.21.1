@@ -1,7 +1,12 @@
 package net.xivenestriealsilver.call_of_gaia.item.custom.tarot_cards;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.protocol.game.ClientboundSetSubtitleTextPacket;
+import net.minecraft.network.protocol.game.ClientboundSetTitleTextPacket;
+import net.minecraft.network.protocol.game.ClientboundSetTitlesAnimationPacket;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.Item;
@@ -11,8 +16,8 @@ import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
 public class DeathCardItem extends Item implements ICurioItem {
 
-    private static final ResourceLocation STRENGTH_MODIFIER_ID =
-            ResourceLocation.fromNamespaceAndPath("call_of_gaia", "tarot_strength_boost");
+    private static final ResourceLocation DEATH_STRENGTH_MODIFIER_ID =
+            ResourceLocation.fromNamespaceAndPath("call_of_gaia", "tarot_death_strength_boost");
 
     public DeathCardItem(Properties properties) {
         super(properties);
@@ -23,23 +28,31 @@ public class DeathCardItem extends Item implements ICurioItem {
         if (!slotContext.entity().level().isClientSide()) {
             // Multiplies the total attack damage value by 1.2 (+20%)
             AttributeModifier modifier = new AttributeModifier(
-                    STRENGTH_MODIFIER_ID,
-                    0.2,
+                    DEATH_STRENGTH_MODIFIER_ID,
+                    0.8,
                     AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL
             );
 
             slotContext.entity().getAttribute(Attributes.ATTACK_DAMAGE).addTransientModifier(modifier);
 
-            slotContext.entity().sendSystemMessage(
-                    Component.literal("You feel the raw power of the tarot card surge through you!")
-            );
+            if (slotContext.entity() instanceof ServerPlayer player) {
+                player.connection.send(new ClientboundSetTitlesAnimationPacket(10, 50, 10));
+                player.connection.send(new ClientboundSetTitleTextPacket(
+                        Component.literal("Death")
+                                .withStyle(ChatFormatting.DARK_RED, ChatFormatting.BOLD)
+                ));
+                player.connection.send(new ClientboundSetSubtitleTextPacket(
+                        Component.literal("clings to you.")
+                                .withStyle(ChatFormatting.DARK_RED,  ChatFormatting.ITALIC)
+                ));
+            }
         }
     }
 
     @Override
     public void onUnequip(SlotContext slotContext, ItemStack newStack, ItemStack stack) {
         if (!slotContext.entity().level().isClientSide()) {
-            slotContext.entity().getAttribute(Attributes.ATTACK_DAMAGE).removeModifier(STRENGTH_MODIFIER_ID);
+            slotContext.entity().getAttribute(Attributes.ATTACK_DAMAGE).removeModifier(DEATH_STRENGTH_MODIFIER_ID);
 
             slotContext.entity().sendSystemMessage(
                     Component.literal("The tarot card's power fades away.")

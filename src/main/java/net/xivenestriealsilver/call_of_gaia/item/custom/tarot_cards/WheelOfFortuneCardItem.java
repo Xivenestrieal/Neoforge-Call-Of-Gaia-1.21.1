@@ -31,7 +31,7 @@ public class WheelOfFortuneCardItem extends Item implements ICurioItem {
             slotContext.entity().getAttribute(Attributes.ATTACK_DAMAGE).addTransientModifier(modifier);
 
             slotContext.entity().sendSystemMessage(
-                    Component.literal("You feel the raw power of the tarot card surge through you!")
+                    Component.literal("Fortune")
             );
         }
     }
