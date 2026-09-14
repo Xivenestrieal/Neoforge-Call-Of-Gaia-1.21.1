@@ -10,7 +10,7 @@ import net.xivenestriealsilver.call_of_gaia.entity.custom.zaara.ZaaraEntity;
 
 public class ZaaraRenderer extends MobRenderer<ZaaraEntity, ZaaraModel<ZaaraEntity>> {
     public ZaaraRenderer(EntityRendererProvider.Context context) {
-        super(context, new ZaaraModel<>(context.bakeLayer(GeckoModel.LAYER_LOCATION)), 0.25f);
+        super(context, new ZaaraModel<>(context.bakeLayer(ZaaraModel.LAYER_LOCATION)), 0.25f);
     }
 
     @Override

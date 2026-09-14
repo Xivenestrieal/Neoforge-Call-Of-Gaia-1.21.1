@@ -9,10 +9,6 @@ import java.util.Map;
 import java.util.UUID;
 
 public class ThreatHandler {
-
-    private static final ThreatHandler INSTANCE = new ThreatHandler();
-    public static ThreatHandler get() { return INSTANCE; }
-
     private final Map<UUID, Float> threatMap = new HashMap<>();
 
     public void increaseThreat(Player player, float amount) {

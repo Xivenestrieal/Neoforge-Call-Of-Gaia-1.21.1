@@ -31,6 +31,7 @@ public class GreatIceSpearAttack implements ZaaraAttack {
 
         spear.setPos(zaara.getX(), zaara.getEyeY() - 0.2, zaara.getZ());
         spear.setOwner(zaara);
+        spear.setBaseDamage(4.0);
 
         double dx = target.getX() - zaara.getX();
         double dy = target.getY(0.5) - spear.getY();

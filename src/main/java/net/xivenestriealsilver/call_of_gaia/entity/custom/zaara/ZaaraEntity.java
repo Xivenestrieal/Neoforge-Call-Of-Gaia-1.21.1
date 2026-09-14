@@ -18,6 +18,7 @@ import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import net.minecraft.nbt.CompoundTag;
 import net.xivenestriealsilver.call_of_gaia.entity.goal.ZaaraCombatGoal;
 import net.xivenestriealsilver.call_of_gaia.handlers.ThreatHandler;
 
@@ -53,9 +54,10 @@ public class ZaaraEntity extends Monster {
     protected void registerGoals() {
         this.goalSelector.addGoal(0, new FloatGoal(this));
         this.goalSelector.addGoal(1, new ZaaraCombatGoal(this));
-        this.goalSelector.addGoal(2, new WaterAvoidingRandomStrollGoal(this, 1.0));
-        this.goalSelector.addGoal(3, new LookAtPlayerGoal(this, Player.class, 16.0F));
-        this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
+        this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, true));
+        this.goalSelector.addGoal(3, new WaterAvoidingRandomStrollGoal(this, 1.0));
+        this.goalSelector.addGoal(4, new LookAtPlayerGoal(this, Player.class, 16.0F));
+        this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
 
         this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Player.class, true));
@@ -77,6 +79,7 @@ public class ZaaraEntity extends Monster {
         if (result && source.getEntity() instanceof Player player) {
             threatManager.increaseThreat(player, amount);
         }
+        updatePhase();
         return result;
     }
 
@@ -90,6 +93,13 @@ public class ZaaraEntity extends Monster {
 
     public void setPhaseTwo(boolean phaseTwo) {
         this.entityData.set(PHASE_TWO, phaseTwo);
+    }
+
+    private void updatePhase() {
+        if (!this.level().isClientSide() && !this.isPhaseTwo()
+                && this.getHealth() <= this.getMaxHealth() * 0.5F) {
+            this.setPhaseTwo(true);
+        }
     }
 
     public void startShatteringWindup() {
@@ -147,6 +157,27 @@ public class ZaaraEntity extends Monster {
     @Override
     public void aiStep() {
         super.aiStep();
-        this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
+        if (!this.level().isClientSide()) {
+            updatePhase();
+            this.bossEvent.setProgress(Math.max(0.0F, this.getHealth() / this.getMaxHealth()));
+        }
+    }
+
+    @Override
+    public void addAdditionalSaveData(CompoundTag tag) {
+        super.addAdditionalSaveData(tag);
+        tag.putBoolean("PhaseTwo", this.isPhaseTwo());
+    }
+
+    @Override
+    public void readAdditionalSaveData(CompoundTag tag) {
+        super.readAdditionalSaveData(tag);
+        this.setPhaseTwo(tag.getBoolean("PhaseTwo"));
+    }
+
+    @Override
+    public void remove(RemovalReason reason) {
+        this.threatManager.clearAll();
+        super.remove(reason);
     }
 }

@@ -1,7 +1,6 @@
 package net.xivenestriealsilver.call_of_gaia.entity.custom;
 
 import net.minecraft.core.Direction;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -45,8 +44,6 @@ public class IceSpearProjectileEntity extends AbstractArrow {
     @Override
     protected void onHitEntity(EntityHitResult result) {
         super.onHitEntity(result);
-        Entity entity = result.getEntity();
-        entity.hurt(this.damageSources().thrown(this, this.getOwner()), 4);
 
         if (!this.level().isClientSide) {
             this.level().broadcastEntityEvent(this, (byte)3);

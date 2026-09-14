@@ -5,12 +5,11 @@ import net.minecraft.world.entity.ai.goal.Goal;
 import net.minecraft.world.entity.player.Player;
 import net.xivenestriealsilver.call_of_gaia.entity.custom.zaara.ZaaraEntity;
 import net.xivenestriealsilver.call_of_gaia.entity.goal.attacks.zaara.GreatIceSpearAttack;
-import net.xivenestriealsilver.call_of_gaia.handlers.ThreatHandler;
 
 import java.util.EnumSet;
 import java.util.List;
 
-public class ZaaraCombatGoal extends Goal {
+public class    ZaaraCombatGoal extends Goal {
     private final ZaaraEntity zaara;
     private ZaaraAttack currentAttack = null;
     private int attackCooldown = 0;
@@ -22,20 +21,31 @@ public class ZaaraCombatGoal extends Goal {
 
     @Override
     public boolean canUse() {
-        return true; // Always running to keep updating threat/attacks
+        return this.zaara.isPhaseTwo();
+    }
+
+    @Override
+    public boolean canContinueToUse() {
+        return this.zaara.isPhaseTwo();
     }
 
     @Override
     public void tick() {
         // 1. Target Management (Threat Logic)
-        List<Player> nearbyPlayers = this.zaara.level().getEntitiesOfClass(Player.class, this.zaara.getBoundingBox().inflate(16.0));
+        List<Player> nearbyPlayers = this.zaara.level().getEntitiesOfClass(
+                Player.class,
+                this.zaara.getBoundingBox().inflate(this.zaara.getAttributeValue(
+                        net.minecraft.world.entity.ai.attributes.Attributes.FOLLOW_RANGE)),
+                Player::isAlive
+        );
 
         if (nearbyPlayers.isEmpty()) {
             this.zaara.setTarget(null);
+            this.zaara.getNavigation().stop();
             return;
         }
 
-        Player highestThreatPlayer = ThreatHandler.get().getHighestThreat(nearbyPlayers);
+        Player highestThreatPlayer = this.zaara.getThreatManager().getHighestThreat(nearbyPlayers);
         if (highestThreatPlayer != null && highestThreatPlayer != this.zaara.getTarget()) {
             this.zaara.setTarget(highestThreatPlayer);
         }

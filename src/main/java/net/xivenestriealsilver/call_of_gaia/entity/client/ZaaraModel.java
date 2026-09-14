@@ -14,7 +14,7 @@ import net.xivenestriealsilver.call_of_gaia.entity.custom.zaara.ZaaraEntity;
 
 public class ZaaraModel<T extends ZaaraEntity> extends HierarchicalModel<T> {
     public static final ModelLayerLocation LAYER_LOCATION =
-            new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(CallOfGaia.MOD_ID, "gecko"), "main");
+            new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(CallOfGaia.MOD_ID, "zaara"), "main");
 
     private final ModelPart body;
     private final ModelPart head;
