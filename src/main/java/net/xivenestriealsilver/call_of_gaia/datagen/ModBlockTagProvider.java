@@ -25,7 +25,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.DEEPSLATE_LAZURITE_ORE.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.DEEPSLATE_LAZURITE_ORE.get());
+                .add(ModBlocks.DEEPSLATE_LAZURITE_ORE.get())
+                .add(ModBlocks.LAZURITE_ORE.get());
+
 
         tag(ModTags.Blocks.NEEDS_LAZURITE_TOOL)
                 .addTag(BlockTags.NEEDS_DIAMOND_TOOL);

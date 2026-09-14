@@ -1,14 +1,16 @@
-package net.xivenestriealsilver.call_of_gaia.util;
+package net.xivenestriealsilver.call_of_gaia.handlers;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.xivenestriealsilver.call_of_gaia.effect.ModEffects;
+import net.xivenestriealsilver.call_of_gaia.util.StatusType;
+
 import java.util.*;
 
-public class StatusBuildupManager {
-    private static final StatusBuildupManager INSTANCE = new StatusBuildupManager();
-    public static StatusBuildupManager get() { return INSTANCE; }
+public class StatusBuildupHandler {
+    private static final StatusBuildupHandler INSTANCE = new StatusBuildupHandler();
+    public static StatusBuildupHandler get() { return INSTANCE; }
 
     private static final float PROC_THRESHOLD = 100f;
     private final Map<UUID, Map<StatusType, Float>> buildupMap = new HashMap<>();

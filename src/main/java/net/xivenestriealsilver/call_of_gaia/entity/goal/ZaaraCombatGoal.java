@@ -5,7 +5,7 @@ import net.minecraft.world.entity.ai.goal.Goal;
 import net.minecraft.world.entity.player.Player;
 import net.xivenestriealsilver.call_of_gaia.entity.custom.zaara.ZaaraEntity;
 import net.xivenestriealsilver.call_of_gaia.entity.goal.attacks.zaara.GreatIceSpearAttack;
-import net.xivenestriealsilver.call_of_gaia.util.ThreatManager;
+import net.xivenestriealsilver.call_of_gaia.handlers.ThreatHandler;
 
 import java.util.EnumSet;
 import java.util.List;
@@ -35,7 +35,7 @@ public class ZaaraCombatGoal extends Goal {
             return;
         }
 
-        Player highestThreatPlayer = ThreatManager.get().getHighestThreat(nearbyPlayers);
+        Player highestThreatPlayer = ThreatHandler.get().getHighestThreat(nearbyPlayers);
         if (highestThreatPlayer != null && highestThreatPlayer != this.zaara.getTarget()) {
             this.zaara.setTarget(highestThreatPlayer);
         }

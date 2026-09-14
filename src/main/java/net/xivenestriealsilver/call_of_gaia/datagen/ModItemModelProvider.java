@@ -57,7 +57,33 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.SEEKING_EYES.get());
         basicItem(ModItems.LAZURITE_KEY.get());
 
- //       basicItem(ModItems.GUIDE_BOOK.get());
+        basicItem(ModItems.THE_FOOL_CARD.get());
+        basicItem(ModItems.THE_MAGICIAN_CARD.get());
+        basicItem(ModItems.THE_HIGH_PRIESTESS_CARD.get());
+        basicItem(ModItems.THE_EMPRESS_CARD.get());
+        basicItem(ModItems.THE_EMPEROR_CARD.get());
+        basicItem(ModItems.THE_HIEROPHANT_CARD.get());
+        basicItem(ModItems.THE_LOVERS_CARD.get());
+        basicItem(ModItems.THE_CHARIOT_CARD.get());
+        basicItem(ModItems.STRENGTH_CARD.get());
+        basicItem(ModItems.THE_HERMIT_CARD.get());
+        basicItem(ModItems.WHEEL_OF_FORTUNE_CARD.get());
+        basicItem(ModItems.JUSTICE_CARD.get());
+        basicItem(ModItems.THE_HANGED_MAN_CARD.get());
+        basicItem(ModItems.DEATH_CARD.get());
+        basicItem(ModItems.TEMPERANCE_CARD.get());
+        basicItem(ModItems.THE_DEVIL_CARD.get());
+        basicItem(ModItems.THE_TOWER_CARD.get());
+        basicItem(ModItems.THE_STAR_CARD.get());
+        basicItem(ModItems.THE_SUN_CARD.get());
+        basicItem(ModItems.THE_MOON_CARD.get());
+        basicItem(ModItems.JUDGEMENT_CARD.get());
+        basicItem(ModItems.THE_WORLD_CARD.get());
+
+
+
+
+        //       basicItem(ModItems.GUIDE_BOOK.get());
 
         // Tools
         handheldItem(ModItems.LAZURITE_SWORD);

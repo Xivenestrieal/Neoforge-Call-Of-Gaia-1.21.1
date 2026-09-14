@@ -31,7 +31,33 @@
   "item.call_of_gaia.guide_book.landing": "Welcome to the world of Gaia. This book will guide you...",
   "item.call_of_gaia.guide_book.subtitle": "A Guide to the World of Gaia",
 
-  "item.call_of_gaia.custom.tarot_cards.the_fool": "The Fool",
+
+  "curios.identifier.card_deck": "Card Deck",
+
+
+  "item.call_of_gaia.the_fool_card": "The Fool",
+  "item.call_of_gaia.the_magician_card": "The Magician",
+  "item.call_of_gaia.the_high_priestess_card": "The High Priestess",
+  "item.call_of_gaia.the_empress_card": "The Empress",
+  "item.call_of_gaia.the_emperor_card": "The Emperor",
+  "item.call_of_gaia.the_hierophant_card": "The Hierophant",
+  "item.call_of_gaia.the_lovers_card": "The Lovers",
+  "item.call_of_gaia.the_chariot_card": "The Chariot",
+  "item.call_of_gaia.strength_card": "Strength",
+  "item.call_of_gaia.the_hermit_card": "The Hermit",
+  "item.call_of_gaia.wheel_of_fortune_card": "Wheel Of Fortune",
+  "item.call_of_gaia.justice_card": "justice",
+  "item.call_of_gaia.the_hanged_man_card": "The Hanged Man",
+  "item.call_of_gaia.death_card": "Death",
+  "item.call_of_gaia.temperance_card": "Temperance",
+  "item.call_of_gaia.the_devil_card": "The Devil",
+  "item.call_of_gaia.the_tower_card": "The Tower",
+  "item.call_of_gaia.the_star_card": "The Star",
+  "item.call_of_gaia.the_moon_card": "The Moon",
+  "item.call_of_gaia.the_sun_card": "The Sun",
+  "item.call_of_gaia.judgement_card": "Judgement",
+  "item.call_of_gaia.the_world_card": "The World",
+
 
 
 

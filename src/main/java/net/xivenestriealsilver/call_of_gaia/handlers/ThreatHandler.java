@@ -1,4 +1,4 @@
-package net.xivenestriealsilver.call_of_gaia.util;
+package net.xivenestriealsilver.call_of_gaia.handlers;
 
 import net.minecraft.world.entity.player.Player;
 
@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
-public class ThreatManager {
+public class ThreatHandler {
 
-    private static final ThreatManager INSTANCE = new ThreatManager();
-    public static ThreatManager get() { return INSTANCE; }
+    private static final ThreatHandler INSTANCE = new ThreatHandler();
+    public static ThreatHandler get() { return INSTANCE; }
 
     private final Map<UUID, Float> threatMap = new HashMap<>();
 

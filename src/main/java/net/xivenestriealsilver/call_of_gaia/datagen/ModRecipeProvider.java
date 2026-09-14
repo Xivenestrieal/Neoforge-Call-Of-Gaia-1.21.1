@@ -1,5 +1,6 @@
 package net.xivenestriealsilver.call_of_gaia.datagen;
 
+import net.minecraft.world.item.Items;
 import net.xivenestriealsilver.call_of_gaia.CallOfGaia;
 import net.xivenestriealsilver.call_of_gaia.block.ModBlocks;
 import net.xivenestriealsilver.call_of_gaia.item.ModItems;
@@ -22,6 +23,34 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected void buildRecipes(RecipeOutput recipeOutput) {
         List<ItemLike> LAZURITE_SMELTABLES = List.of(ModItems.RAW_LAZURITE,
                 ModBlocks.LAZURITE_ORE, ModBlocks.DEEPSLATE_LAZURITE_ORE);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.LAZURITE_SWORD.get())
+                .pattern(" BB")
+                .pattern(" SB")
+                .pattern(" S ")
+                .define('B', ModItems.LAZURITE_INGOT.get())
+                .define( 'S', Items.STICK)
+                .unlockedBy("has_lazurite_ingot", has(ModItems.LAZURITE_INGOT)).save(recipeOutput);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.LAZURITE_HOE.get())
+                .pattern(" BB")
+                .pattern(" B ")
+                .pattern(" S ")
+                .define('B', ModItems.LAZURITE_INGOT.get())
+                .define( 'S', Items.STICK)
+                .unlockedBy("has_lazurite_ingot", has(ModItems.LAZURITE_INGOT)).save(recipeOutput);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.LAZURITE_SHOVEL.get())
+                .pattern(" B ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('B', ModItems.LAZURITE_INGOT.get())
+                .define( 'S', Items.STICK)
+                .unlockedBy("has_lazurite_ingot", has(ModItems.LAZURITE_INGOT)).save(recipeOutput);
+
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.LAZURITE_BLOCK.get())
                 .pattern("BBB")

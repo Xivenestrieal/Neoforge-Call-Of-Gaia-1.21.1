@@ -19,7 +19,7 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.xivenestriealsilver.call_of_gaia.entity.goal.ZaaraCombatGoal;
-import net.xivenestriealsilver.call_of_gaia.util.ThreatManager;
+import net.xivenestriealsilver.call_of_gaia.handlers.ThreatHandler;
 
 public class ZaaraEntity extends Monster {
 
@@ -29,7 +29,7 @@ public class ZaaraEntity extends Monster {
     private  final ServerBossEvent bossEvent = new ServerBossEvent(Component.literal("Zaara, Monarch Of Frost"),
             BossEvent.BossBarColor.BLUE, BossEvent.BossBarOverlay.NOTCHED_10);
 
-    private final ThreatManager threatManager = new ThreatManager();
+    private final ThreatHandler threatManager = new ThreatHandler();
 
     public final AnimationState idleAnimationState = new AnimationState();
     public final AnimationState shatteringWindupAnimationState = new AnimationState();
@@ -80,7 +80,7 @@ public class ZaaraEntity extends Monster {
         return result;
     }
 
-    public ThreatManager getThreatManager() {
+    public ThreatHandler getThreatManager() {
         return threatManager;
     }
 
