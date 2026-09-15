@@ -1,7 +1,12 @@
 package net.xivenestriealsilver.call_of_gaia.item.custom.tarot_cards;
 
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TextColor;
+import net.minecraft.network.protocol.game.ClientboundSetSubtitleTextPacket;
+import net.minecraft.network.protocol.game.ClientboundSetTitleTextPacket;
+import net.minecraft.network.protocol.game.ClientboundSetTitlesAnimationPacket;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.Item;
@@ -30,10 +35,21 @@ public class TheLoversCardItem extends Item implements ICurioItem {
 
             slotContext.entity().getAttribute(Attributes.ATTACK_DAMAGE).addTransientModifier(modifier);
 
-            slotContext.entity().sendSystemMessage(
-                    Component.literal("Lovers!")
-            );
-        }
+            if (slotContext.entity() instanceof ServerPlayer player) {
+                player.connection.send(new ClientboundSetTitlesAnimationPacket(30, 40, 30));
+                player.connection.send(new ClientboundSetTitleTextPacket(
+                        Component.literal("THE LOVERS")
+                                .withStyle(style -> style
+                                        .withColor(TextColor.fromRgb(0xFF69B4))
+                                        .withBold(true))
+                ));
+                player.connection.send(new ClientboundSetSubtitleTextPacket(
+                        Component.literal("\"im feeling romantical\"")
+                                .withStyle(style -> style
+                                        .withColor(TextColor.fromRgb(0xFF69B4))
+                                        .withItalic(true))
+                ));
+            }             }
     }
 
     @Override

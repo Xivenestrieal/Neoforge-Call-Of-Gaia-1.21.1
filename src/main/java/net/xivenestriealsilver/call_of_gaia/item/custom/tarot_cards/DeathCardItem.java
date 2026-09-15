@@ -36,9 +36,9 @@ public class DeathCardItem extends Item implements ICurioItem {
             slotContext.entity().getAttribute(Attributes.ATTACK_DAMAGE).addTransientModifier(modifier);
 
             if (slotContext.entity() instanceof ServerPlayer player) {
-                player.connection.send(new ClientboundSetTitlesAnimationPacket(10, 50, 10));
+                player.connection.send(new ClientboundSetTitlesAnimationPacket(30, 40, 30));
                 player.connection.send(new ClientboundSetTitleTextPacket(
-                        Component.literal("Death")
+                        Component.literal("DEATH")
                                 .withStyle(ChatFormatting.DARK_RED, ChatFormatting.BOLD)
                 ));
                 player.connection.send(new ClientboundSetSubtitleTextPacket(

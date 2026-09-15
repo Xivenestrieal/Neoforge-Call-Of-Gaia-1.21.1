@@ -1,8 +1,13 @@
 package net.xivenestriealsilver.call_of_gaia.item.custom.tarot_cards;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.protocol.game.ClientboundSetSubtitleTextPacket;
+import net.minecraft.network.protocol.game.ClientboundSetTitleTextPacket;
+import net.minecraft.network.protocol.game.ClientboundSetTitlesAnimationPacket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -34,6 +39,21 @@ public class TheTowerCardItem extends Item implements ICurioItem {
             // 1. Check movement using server movement handler
             boolean isMoving = ServerMovementHandler.isPlayerMoving(serverPlayer);
 
+            // Spawn particles periodically while the player is standing still.
+            if (!isMoving && serverPlayer.level().getGameTime() % 5L == 0L) {
+                serverPlayer.serverLevel().sendParticles(
+                        ParticleTypes.END_ROD,
+                        serverPlayer.getX(),
+                        serverPlayer.getY() + 1.0D,
+                        serverPlayer.getZ(),
+                        3,
+                        0.35D,
+                        0.5D,
+                        0.35D,
+                        0.01D
+                );
+            }
+
             // 2. Determine what the multiplier should be
             double targetAmount = isMoving ? 0.2 : 0.4;
 
@@ -63,9 +83,18 @@ public class TheTowerCardItem extends Item implements ICurioItem {
     @Override
     public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) {
         if (!slotContext.entity().level().isClientSide()) {
-            slotContext.entity().sendSystemMessage(
-                    Component.literal("You feel the unyielding foundation of the Tower settle.")
-            );
+
+            if (slotContext.entity() instanceof ServerPlayer player) {
+                player.connection.send(new ClientboundSetTitlesAnimationPacket(30, 40, 30));
+                player.connection.send(new ClientboundSetTitleTextPacket(
+                        Component.literal("THE TOWER")
+                                .withStyle(ChatFormatting.BLUE, ChatFormatting.BOLD)
+                ));
+                player.connection.send(new ClientboundSetSubtitleTextPacket(
+                        Component.literal("the immovable object™")
+                                .withStyle(ChatFormatting.BLUE,  ChatFormatting.ITALIC)
+                ));
+            }
         }
     }
 
