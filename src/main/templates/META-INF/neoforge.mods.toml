@@ -94,6 +94,13 @@ description='''${mod_description}'''
     ordering="NONE"
     side="BOTH"
 
+[[dependencies.${mod_id}]]
+    modId="curios"
+    type="required"
+    versionRange="[9.5.1,]"
+    ordering="NONE"
+    side="BOTH"
+
 
 
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares
