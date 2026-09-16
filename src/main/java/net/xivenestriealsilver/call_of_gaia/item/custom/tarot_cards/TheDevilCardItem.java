@@ -16,6 +16,8 @@ import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
 public class TheDevilCardItem extends Item implements ICurioItem {
 
+    private static final int COOLDOWN_TICKS = 20 * 10;
+
     private static final ResourceLocation STRENGTH_MODIFIER_ID =
             ResourceLocation.fromNamespaceAndPath("call_of_gaia", "tarot_strength_boost");
 
@@ -24,8 +26,19 @@ public class TheDevilCardItem extends Item implements ICurioItem {
     }
 
     @Override
+    public boolean canEquip(SlotContext slotContext, ItemStack stack) {
+        return !(slotContext.entity() instanceof ServerPlayer player)
+                || !player.getCooldowns().isOnCooldown(this);
+    }
+
+    @Override
     public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) {
         if (!slotContext.entity().level().isClientSide()) {
+            if (slotContext.entity() instanceof ServerPlayer player
+                    && player.getCooldowns().isOnCooldown(this)) {
+                return;
+            }
+
             // Multiplies the total attack damage value by 1.2 (+20%)
             AttributeModifier modifier = new AttributeModifier(
                     STRENGTH_MODIFIER_ID,
@@ -51,6 +64,10 @@ public class TheDevilCardItem extends Item implements ICurioItem {
     @Override
     public void onUnequip(SlotContext slotContext, ItemStack newStack, ItemStack stack) {
         if (!slotContext.entity().level().isClientSide()) {
+            if (slotContext.entity() instanceof ServerPlayer player) {
+                player.getCooldowns().addCooldown(this, COOLDOWN_TICKS);
+            }
+
             slotContext.entity().getAttribute(Attributes.ATTACK_DAMAGE).removeModifier(STRENGTH_MODIFIER_ID);
 
             slotContext.entity().sendSystemMessage(

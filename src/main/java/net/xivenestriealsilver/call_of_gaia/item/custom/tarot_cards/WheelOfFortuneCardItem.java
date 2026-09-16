@@ -17,6 +17,8 @@ import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
 public class WheelOfFortuneCardItem extends Item implements ICurioItem {
 
+    private static final int COOLDOWN_TICKS = 20 * 10;
+
     private static final ResourceLocation LUCK_MODIFIER_ID =
             ResourceLocation.fromNamespaceAndPath("call_of_gaia", "tarot_fortune_luck_boost");
 
@@ -25,9 +27,19 @@ public class WheelOfFortuneCardItem extends Item implements ICurioItem {
     }
 
     @Override
+    public boolean canEquip(SlotContext slotContext, ItemStack stack) {
+        return !(slotContext.entity() instanceof ServerPlayer player)
+                || !player.getCooldowns().isOnCooldown(this);
+    }
+
+    @Override
     public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) {
         if (!slotContext.entity().level().isClientSide()
                 && slotContext.entity() instanceof ServerPlayer player) {
+
+            if (player.getCooldowns().isOnCooldown(this)) {
+                return;
+            }
 
             AttributeInstance luckAttr = player.getAttribute(Attributes.LUCK);
 
@@ -53,14 +65,16 @@ public class WheelOfFortuneCardItem extends Item implements ICurioItem {
 
     @Override
     public void onUnequip(SlotContext slotContext, ItemStack newStack, ItemStack stack) {
-        if (!slotContext.entity().level().isClientSide()) {
-            AttributeInstance luckAttr = slotContext.entity().getAttribute(Attributes.LUCK);
+        if (!slotContext.entity().level().isClientSide()
+                && slotContext.entity() instanceof ServerPlayer player) {
+            AttributeInstance luckAttr = player.getAttribute(Attributes.LUCK);
 
             if (luckAttr != null) {
                 luckAttr.removeModifier(LUCK_MODIFIER_ID);
             }
 
-            slotContext.entity().sendSystemMessage(
+            player.getCooldowns().addCooldown(this, COOLDOWN_TICKS);
+            player.sendSystemMessage(
                     Component.literal("RNGeesus frowns.")
             );
         }

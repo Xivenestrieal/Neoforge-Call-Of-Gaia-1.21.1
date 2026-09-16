@@ -20,6 +20,8 @@ import net.xivenestriealsilver.call_of_gaia.handlers.ServerMovementHandler;
 public class TheTowerCardItem extends Item implements ICurioItem {
 
     // Unique IDs for tracking both modifiers independently
+    private static final int COOLDOWN_TICKS = 20 * 10;
+
     private static final ResourceLocation TOWER_ARMOR_ID =
             ResourceLocation.fromNamespaceAndPath("call_of_gaia", "tarot_tower_armor");
     private static final ResourceLocation TOWER_TOUGHNESS_ID =
@@ -32,6 +34,10 @@ public class TheTowerCardItem extends Item implements ICurioItem {
     @Override
     public void curioTick(SlotContext slotContext, ItemStack stack) {
         if (slotContext.entity() instanceof ServerPlayer serverPlayer) {
+            if (serverPlayer.getCooldowns().isOnCooldown(this)) {
+                return;
+            }
+
             AttributeInstance armorAttr = serverPlayer.getAttribute(Attributes.ARMOR);
             AttributeInstance toughnessAttr = serverPlayer.getAttribute(Attributes.ARMOR_TOUGHNESS);
             if (armorAttr == null || toughnessAttr == null) return;
@@ -81,8 +87,19 @@ public class TheTowerCardItem extends Item implements ICurioItem {
     }
 
     @Override
+    public boolean canEquip(SlotContext slotContext, ItemStack stack) {
+        return !(slotContext.entity() instanceof ServerPlayer player)
+                || !player.getCooldowns().isOnCooldown(this);
+    }
+
+    @Override
     public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) {
         if (!slotContext.entity().level().isClientSide()) {
+            if (slotContext.entity() instanceof ServerPlayer player
+                    && player.getCooldowns().isOnCooldown(this)) {
+                return;
+            }
+
 
             if (slotContext.entity() instanceof ServerPlayer player) {
                 player.connection.send(new ClientboundSetTitlesAnimationPacket(30, 40, 30));
@@ -101,6 +118,10 @@ public class TheTowerCardItem extends Item implements ICurioItem {
     @Override
     public void onUnequip(SlotContext slotContext, ItemStack newStack, ItemStack stack) {
         if (!slotContext.entity().level().isClientSide()) {
+            if (slotContext.entity() instanceof ServerPlayer player) {
+                player.getCooldowns().addCooldown(this, COOLDOWN_TICKS);
+            }
+
             // Safely clean up both modifiers if unequipped
             AttributeInstance armorAttr = slotContext.entity().getAttribute(Attributes.ARMOR);
             AttributeInstance toughnessAttr = slotContext.entity().getAttribute(Attributes.ARMOR_TOUGHNESS);
