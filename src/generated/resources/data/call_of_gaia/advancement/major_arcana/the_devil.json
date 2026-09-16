@@ -1,0 +1,35 @@
+{
+  "parent": "call_of_gaia:major_arcana/root",
+  "criteria": {
+    "has_card": {
+      "conditions": {
+        "items": [
+          {
+            "items": "call_of_gaia:the_devil_card"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.call_of_gaia.the_devil.description"
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "count": 1,
+      "id": "call_of_gaia:the_devil_card"
+    },
+    "title": {
+      "translate": "advancements.call_of_gaia.the_devil.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_card"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

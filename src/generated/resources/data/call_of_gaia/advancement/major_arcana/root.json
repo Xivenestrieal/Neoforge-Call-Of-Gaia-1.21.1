@@ -1,0 +1,96 @@
+{
+  "criteria": {
+    "has_any_card": {
+      "conditions": {
+        "items": [
+          {
+            "items": "call_of_gaia:the_fool_card"
+          },
+          {
+            "items": "call_of_gaia:the_magician_card"
+          },
+          {
+            "items": "call_of_gaia:the_high_priestess_card"
+          },
+          {
+            "items": "call_of_gaia:the_empress_card"
+          },
+          {
+            "items": "call_of_gaia:the_emperor_card"
+          },
+          {
+            "items": "call_of_gaia:the_hierophant_card"
+          },
+          {
+            "items": "call_of_gaia:the_lovers_card"
+          },
+          {
+            "items": "call_of_gaia:the_chariot_card"
+          },
+          {
+            "items": "call_of_gaia:strength_card"
+          },
+          {
+            "items": "call_of_gaia:the_hermit_card"
+          },
+          {
+            "items": "call_of_gaia:wheel_of_fortune_card"
+          },
+          {
+            "items": "call_of_gaia:justice_card"
+          },
+          {
+            "items": "call_of_gaia:the_hanged_man_card"
+          },
+          {
+            "items": "call_of_gaia:death_card"
+          },
+          {
+            "items": "call_of_gaia:temperance_card"
+          },
+          {
+            "items": "call_of_gaia:the_devil_card"
+          },
+          {
+            "items": "call_of_gaia:the_tower_card"
+          },
+          {
+            "items": "call_of_gaia:the_star_card"
+          },
+          {
+            "items": "call_of_gaia:the_moon_card"
+          },
+          {
+            "items": "call_of_gaia:the_sun_card"
+          },
+          {
+            "items": "call_of_gaia:judgement_card"
+          },
+          {
+            "items": "call_of_gaia:the_world_card"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:gui/advancements/backgrounds/adventure",
+    "description": {
+      "translate": "advancements.call_of_gaia.major_arcana.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "call_of_gaia:the_fool_card"
+    },
+    "title": {
+      "translate": "advancements.call_of_gaia.major_arcana.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_any_card"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
