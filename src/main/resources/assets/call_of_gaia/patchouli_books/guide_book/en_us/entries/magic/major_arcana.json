@@ -1,0 +1,13 @@
+{
+  "name": "Major Arcana",
+  "icon": "call_of_gaia:the_fool_card",
+  "category": "call_of_gaia:magic",
+  "sortnum": 50,
+  "advancement": "call_of_gaia:major_arcana/root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(italic)\"Magic Forgotten...\"$()$(br2)Long ago, back before time had a name, there was the first spinjitzu master He did stuff, and thats how the world of thingy became a thing."
+    }
+  ]
+}

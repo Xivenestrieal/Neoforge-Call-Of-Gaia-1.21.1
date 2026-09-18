@@ -27,7 +27,7 @@ public class ModAdvancements extends AdvancementProvider {
     public static class CallOfGaiaModAdvancements implements AdvancementSubProvider {
         @Override
         public void generate(HolderLookup.Provider registries, Consumer<AdvancementHolder> output) {
-            Advancement.Builder.advancement()
+            AdvancementHolder root = Advancement.Builder.advancement()
                     .display(
                             ModItems.LAZURITE_INGOT,
                             Component.translatable("advancements.call_of_gaia.root.title"),
@@ -67,6 +67,7 @@ public class ModAdvancements extends AdvancementProvider {
             };
 
             AdvancementHolder majorArcanaRoot = Advancement.Builder.advancement()
+                    .parent(root)
                     .display(
                             ModItems.THE_FOOL_CARD,
                             Component.translatable("advancements.call_of_gaia.major_arcana.title"),
