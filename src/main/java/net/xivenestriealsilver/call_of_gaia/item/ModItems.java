@@ -75,7 +75,7 @@ public class ModItems {
             () -> new TheEmperorCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
 
     public static final DeferredItem<Item> THE_HIEROPHANT_CARD = ITEMS.register("the_hierophant_card",
-            () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
+            () -> new TheHierophantCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
 
     public static final DeferredItem<Item> THE_LOVERS_CARD = ITEMS.register("the_lovers_card",
             () -> new TheLoversCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));

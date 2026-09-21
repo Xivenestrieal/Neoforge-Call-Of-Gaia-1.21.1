@@ -1,8 +1,8 @@
 {
   "name": "The World of Gaia",
   "icon": "minecraft:written_book",
-  "category": "call_of_gaia:getting_started",
-  "sortnum": 1,
+  "category": "call_of_gaia:lore",
+  "sortnum": 0,
   "advancement": "call_of_gaia:lore/intro_unlocked",
   "pages": [
     {
