@@ -1,4 +1,5 @@
 {
+  "parent": "call_of_gaia:root",
   "criteria": {
     "has_any_card": {
       "conditions": {

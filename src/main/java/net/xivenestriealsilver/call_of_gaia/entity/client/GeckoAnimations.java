@@ -5,7 +5,9 @@ import net.minecraft.client.animation.AnimationDefinition;
 import net.minecraft.client.animation.Keyframe;
 import net.minecraft.client.animation.KeyframeAnimations;
 
-public class GeckoAnimations {
+public class
+
+GeckoAnimations {
     public static final AnimationDefinition ANIM_GECKO_IDLE = AnimationDefinition.Builder.withLength(4f).looping()
             .addAnimation("Head",
                     new AnimationChannel(AnimationChannel.Targets.ROTATION,

@@ -20,7 +20,7 @@ import net.xivenestriealsilver.call_of_gaia.handlers.ServerMovementHandler;
 public class TheTowerCardItem extends Item implements ICurioItem {
 
     // Unique IDs for tracking both modifiers independently
-    private static final int COOLDOWN_TICKS = 20 * 10;
+    private static final int COOLDOWN_TICKS = 20 * 900;
 // TODO: Make armor toughness and armor stat only have 1 decimal
     private static final ResourceLocation TOWER_ARMOR_ID =
             ResourceLocation.fromNamespaceAndPath("call_of_gaia", "tarot_tower_armor");

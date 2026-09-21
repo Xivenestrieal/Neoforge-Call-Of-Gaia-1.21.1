@@ -16,7 +16,7 @@ import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
 public class TheMoonCardItem extends Item implements ICurioItem {
 
-    private static final int COOLDOWN_TICKS = 20 * 10;
+    private static final int COOLDOWN_TICKS = 20 * 900;
 
     private static final ResourceLocation STRENGTH_MODIFIER_ID =
             ResourceLocation.fromNamespaceAndPath("call_of_gaia", "tarot_strength_boost");

@@ -17,7 +17,7 @@ import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
 public class WheelOfFortuneCardItem extends Item implements ICurioItem {
 
-    private static final int COOLDOWN_TICKS = 20 * 10;
+    private static final int COOLDOWN_TICKS = 20 * 900;
 
     private static final ResourceLocation LUCK_MODIFIER_ID =
             ResourceLocation.fromNamespaceAndPath("call_of_gaia", "tarot_fortune_luck_boost");
