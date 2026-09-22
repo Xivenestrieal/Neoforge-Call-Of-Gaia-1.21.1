@@ -2,7 +2,7 @@
   "name": "Major Arcana",
   "icon": "call_of_gaia:the_fool_card",
   "category": "call_of_gaia:magic",
-  "sortnum": 50,
+  "sortnum": 100,
   "advancement": "call_of_gaia:major_arcana/root",
   "pages": [
     {

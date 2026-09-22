@@ -1,0 +1,12 @@
+{
+  "name": "The Hermit",
+  "icon": "call_of_gaia:the_hermit_card",
+  "category": "call_of_gaia:magic",
+  "sortnum": 110,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)The Guide Book$() is your companion throughout Gaia. It updates as you discover new things, unlocking pages as you progress.$(br2)Right-click to open it at any time."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Wheel Of Fortune",
+  "icon": "call_of_gaia:wheel_of_fortune_card",
+  "category": "call_of_gaia:magic",
+  "sortnum": 111,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)The Guide Book$() is your companion throughout Gaia. It updates as you discover new things, unlocking pages as you progress.$(br2)Right-click to open it at any time."
+    }
+  ]
+}
