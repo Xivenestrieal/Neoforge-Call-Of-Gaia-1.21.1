@@ -73,7 +73,15 @@ public class DeathCardItem extends Item implements ICurioItem {
             slotContext.entity().getAttribute(Attributes.ATTACK_DAMAGE).removeModifier(DEATH_STRENGTH_MODIFIER_ID);
 
             slotContext.entity().sendSystemMessage(
-                    Component.literal("The tarot card's power fades away.")
+                    Component.literal("The tarot card's power fades away."));
+
+                    // nathan
+                    slotContext.entity().sendSystemMessage(
+                            Component.literal("femboys")
+
+
+
+
             );
         }
     }
