@@ -5,6 +5,5 @@
   "creative_tab": "call_of_gaia:lazurite_items_tab",
   "use_resource_pack": true,
   "model": "patchouli:book_cyan",
-  "book_texture": "patchouli:textures/gui/book_cyan.png",
-  "show_progress": true
+  "book_texture": "patchouli:textures/gui/book_cyan.png"
 }

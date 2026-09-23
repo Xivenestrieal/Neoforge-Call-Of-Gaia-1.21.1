@@ -3,8 +3,7 @@
   "icon": "minecraft:written_book",
   "category": "call_of_gaia:lore",
   "sortnum": 0,
-  "advancement": "call_of_gaia:lore/intro_unlocked",
-  "pages": [
+     "pages": [
     {
       "type": "text",
       "text": "$(italic)\"The land remembers what its people have forgotten...\"$()$(br2)Long ago, back before time had a name, there was the first spinjitzu master He did stuff, and thats how the world of thingy became a thing."
