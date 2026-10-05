@@ -1,10 +1,10 @@
 {
+  "creativetab.call_of_gaia.lazurite_items": "Items",
+  "creativetab.call_of_gaia.lazurite_blocks": "Blocks",
+
+
   "item.call_of_gaia.raw_lazurite": "Raw Lazurite",
   "item.call_of_gaia.lazurite_ingot": "Lazurite Ingot",
-  "item.call_of_gaia.lazurite_key": "Lazurite Key",
-  "item.call_of_gaia.hogyoku_soul": "Hogyoku Soul",
-  "item.call_of_gaia.corrupted_soul": "Corrupted Soul",
-  "item.call_of_gaia.seeking_eyes": "Seeking Eyes",
 
   "item.call_of_gaia.lazurite_sword": "Lazurite Sword",
   "item.call_of_gaia.lazurite_pickaxe": "Lazurite Pickaxe",
@@ -12,20 +12,27 @@
   "item.call_of_gaia.lazurite_axe": "Lazurite Axe",
   "item.call_of_gaia.lazurite_hoe": "Lazurite Hoe",
 
+  "item.call_of_gaia.chisel": "Chisel",
   "item.call_of_gaia.ice_spear": "Ice Spear",
-
 
   "item.call_of_gaia.lazurite_helmet": "Lazurite Helmet",
   "item.call_of_gaia.lazurite_chestplate": "Lazurite Chestplate",
   "item.call_of_gaia.lazurite_leggings": "Lazurite Leggings",
   "item.call_of_gaia.lazurite_boots": "Lazurite Boots",
 
+
+  "item.call_of_gaia.lazurite_key": "Lazurite Key",
+  "item.call_of_gaia.hogyoku_soul": "Hogyoku Soul",
+  "item.call_of_gaia.corrupted_soul": "Corrupted Soul",
+  "item.call_of_gaia.seeking_eyes": "Seeking Eyes",
+
+
   "item.call_of_gaia.root_heart": "Root Heart",
+
 
   "item.call_of_gaia.ent_charcoal": "Ent Charcoal",
   "item.call_of_gaia.frozen_flame": "Frozen Flame",
 
-  "item.call_of_gaia.chisel": "Chisel",
 
   "item.call_of_gaia.guide_book": "The Call Of Gaia™",
   "item.call_of_gaia.guide_book.landing": "Welcome to the world of Gaia. This book will guide you...",
@@ -33,7 +40,6 @@
 
 
   "curios.identifier.card_deck": "Card Deck",
-
 
   "item.call_of_gaia.the_fool_card": "The Fool",
   "item.call_of_gaia.the_magician_card": "The Magician",
@@ -58,32 +64,18 @@
   "item.call_of_gaia.judgement_card": "Judgement",
   "item.call_of_gaia.the_world_card": "The World",
 
-
-
-
-
-
-  "effect.call_of_gaia.bleed": "Bleed",
-  "effect.call_of_gaia.frostbite": "Frostbite",
-
-
   "block.call_of_gaia.lazurite_block": "Block of Lazurite",
   "block.call_of_gaia.seeking_block": "Block of Seeking",
   "block.call_of_gaia.lazurite_lamp": "Lazurite Lamp",
   "block.call_of_gaia.lazurite_ore": "Lazurite Ore",
   "block.call_of_gaia.deepslate_lazurite_ore": "Deepslate Lazurite Ore",
 
-  "creativetab.call_of_gaia.lazurite_items": "Items",
-  "creativetab.call_of_gaia.lazurite_blocks": "Blocks",
 
   "tooltip.call_of_gaia.seeking_block.tooltip": "What does it seek? I wonder... if only i could §9see§r into it's mind",
-  "tooltip.call_of_gaia.chisel.shift_down": "This item can chisel Blocks into Bricks",
   "tooltip.call_of_gaia.chisel": "Press §eShift§r for more Information",
-
-
-
-
+  "tooltip.call_of_gaia.chisel.shift_down": "This item can chisel Blocks into Bricks",
   "item.call_of_gaia.seeking_eyes.tooltip": "The ever seeking eyes, constantly looking for a §9place§r to belong",
+
 
   "entity.mccourse.gecko": "Gecko",
   "entity.mccourse.zaara": "Zaara, The Frozen Monarch",
@@ -92,9 +84,11 @@
 
   "entity.mccourse.ice_spear": "Ice Spear",
 
-
-
   "item.call_of_gaia.gecko_spawn_egg": "Gecko Spawn Egg",
+
+
+  "effect.call_of_gaia.bleed": "Bleed",
+  "effect.call_of_gaia.frostbite": "Frostbite",
 
 
   "advancements.call_of_gaia.root.title": "The Call of Gaia",

@@ -1,6 +1,5 @@
 package net.xivenestriealsilver.call_of_gaia.event;
 
-import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -10,7 +9,7 @@ import net.xivenestriealsilver.call_of_gaia.entity.client.GeckoModel;
 import net.xivenestriealsilver.call_of_gaia.entity.client.IceSpearProjectileModel;
 import net.xivenestriealsilver.call_of_gaia.entity.client.ZaaraModel;
 
-@EventBusSubscriber(modid = CallOfGaia.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(modid = CallOfGaia.MOD_ID, value = Dist.CLIENT)
 public final class ClientModEventBusEvents {
     private ClientModEventBusEvents() {
     }

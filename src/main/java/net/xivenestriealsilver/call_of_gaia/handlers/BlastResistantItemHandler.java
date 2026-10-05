@@ -27,11 +27,9 @@ public class BlastResistantItemHandler {
             ItemStack stack = itemEntity.getItem();
             Item item = stack.getItem();
 
-            // 1. Check Package Approach
             String itemPackage = item.getClass().getPackageName();
             boolean isFromTargetPackage = itemPackage.startsWith(TARGET_PACKAGE);
 
-            // 2. Check Singular Approach safely using stream matching
             boolean isSingularMatch = SINGULAR_BLAST_RESISTANT_ITEMS.stream()
                     .anyMatch(supplier -> supplier.get() == item);
 

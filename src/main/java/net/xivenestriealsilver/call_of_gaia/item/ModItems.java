@@ -16,16 +16,17 @@ import java.util.List;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(CallOfGaia.MOD_ID);
 
+                                                    // MATERIALS
     public static final DeferredItem<Item> RAW_LAZURITE = ITEMS.register("raw_lazurite",
             () -> new Item(new Item.Properties()));
-
 
     public static final DeferredItem<Item> LAZURITE_INGOT = ITEMS.register("lazurite_ingot",
             () -> new Item(new Item.Properties()));
 
+
+                                                    //BOSS ITEMS
     public static final DeferredItem<Item> CORRUPTED_SOUL = ITEMS.register("corrupted_soul",
             () -> new Item(new Item.Properties()));
-
 
     public static final DeferredItem<Item> LAZURITE_KEY = ITEMS.register("lazurite_key",
             () -> new Item(new Item.Properties()));
@@ -40,9 +41,13 @@ public class ModItems {
                 }
             });
 
+
+                                            //SOUL EVOLUTION
     public static final DeferredItem<Item> HOGYOKU_SOUL = ITEMS.register("hogyoku_soul",
             () -> new Item(new Item.Properties()));
 
+
+                                            //FOOD / CONSUMABLES
     public static final DeferredItem<Item> ROOT_HEART = ITEMS.register("root_heart",
             () -> new Item(new Item.Properties().food(ModFoodProperties.ROOT_HEART)));
 
@@ -52,13 +57,8 @@ public class ModItems {
     public static final DeferredItem<Item> FROZEN_FLAME = ITEMS.register("frozen_flame",
             () -> new Item(new Item.Properties()));
 
-    public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
-            () -> new ChiselItem(new Item.Properties().durability(50)));
 
-
-    // TAROT CARDS
-
-
+                                                    // MAJOR ARCANA
     public static final DeferredItem<Item> THE_FOOL_CARD = ITEMS.register("the_fool_card",
             () -> new TheFoolCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
 
@@ -126,10 +126,9 @@ public class ModItems {
             () -> new TheWorldCardItem(new Item.Properties().fireResistant().rarity(Rarity.EPIC).stacksTo(1)));
 
 
-
-
-
-
+                                                                //EQUIPMENT
+    public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
+            () -> new ChiselItem(new Item.Properties().durability(50)));
 
     public static final DeferredItem<SwordItem> LAZURITE_SWORD = ITEMS.register("lazurite_sword", ()-> new SwordItem(ModToolTiers.LAZURITE,
             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.LAZURITE, 3f, -2.4f))));
@@ -147,6 +146,7 @@ public class ModItems {
             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.LAZURITE, -4.0f, 0f))));
 
 
+                                                        //ARMOR
     public static final DeferredItem<ArmorItem> LAZURITE_HELMET = ITEMS.register("lazurite_helmet", ()->
             new ModArmorItem(ModArmorMaterials.LAZURITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(30))));
@@ -163,10 +163,14 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.LAZURITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(30))));
 
+
+                                                //ENTITY-RELATED
     public static final DeferredItem<Item> GECKO_SPAWN_EGG = ITEMS.register("gecko_spawn_egg",
             ()-> new DeferredSpawnEggItem(ModEntities.GECKO, 0x31afaf, 0xffac00,
                     new Item.Properties()));
 
+
+                                                 //PROJECTILES
     public static final DeferredItem<Item> ICE_SPEAR = ITEMS.register("ice_spear",
             ()-> new IceSpearItem(new Item.Properties().stacksTo(4)));
 
