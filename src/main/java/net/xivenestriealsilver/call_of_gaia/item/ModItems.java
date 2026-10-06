@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.xivenestriealsilver.call_of_gaia.CallOfGaia;
 import net.xivenestriealsilver.call_of_gaia.entity.ModEntities;
 import net.xivenestriealsilver.call_of_gaia.item.custom.*;
+import net.xivenestriealsilver.call_of_gaia.item.custom.soul_evolutions.PureEvolutionAwakeningItem;
 import net.xivenestriealsilver.call_of_gaia.item.custom.tarot_cards.*;
 
 import java.util.List;
@@ -45,6 +46,9 @@ public class ModItems {
                                             //SOUL EVOLUTION
     public static final DeferredItem<Item> HOGYOKU_SOUL = ITEMS.register("hogyoku_soul",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> PURE_EVOLUTION_AWAKENING = ITEMS.register("pure_evolution_awakening",
+            () -> new PureEvolutionAwakeningItem(new Item.Properties().food(ModFoodProperties.PURE_EVOLUTION_AWAKENING).rarity(Rarity.EPIC).stacksTo(1)));
 
 
                                             //FOOD / CONSUMABLES
