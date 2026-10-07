@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "call_of_gaia:lazurite_ingot"
+    },
+    "C": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "E": {
+      "item": "minecraft:diamond"
+    },
+    "G": {
+      "item": "minecraft:compass"
+    },
+    "S": {
+      "item": "call_of_gaia:yabach_seeking_eyes"
+    }
+  },
+  "pattern": [
+    " S ",
+    "EGC",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "call_of_gaia:seeking_block"
+  }
+}
