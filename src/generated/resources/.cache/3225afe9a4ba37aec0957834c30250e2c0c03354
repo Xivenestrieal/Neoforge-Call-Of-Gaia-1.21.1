@@ -1,5 +1,0 @@
-// 1.21.1	2026-09-14T10:42:12.9416746	Tags for minecraft:block mod id call_of_gaia
-9be287aa1026f434a39efe5cf87bb4d981d1dbff data/call_of_gaia/tags/block/incorrect_for_lazurite_tool.json
-a249c46329a41538f49a564e1f14338aaf1be5a0 data/call_of_gaia/tags/block/needs_lazurite_tool.json
-2caf9f07bd8b5665afb80017cc6244b31d7ca8cb data/minecraft/tags/block/mineable/pickaxe.json
-bc4437058e8e87a8a0046804b784387472134a28 data/minecraft/tags/block/needs_iron_tool.json
