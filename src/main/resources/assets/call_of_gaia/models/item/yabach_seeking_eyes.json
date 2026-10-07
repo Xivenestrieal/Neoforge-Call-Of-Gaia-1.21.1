@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "call_of_gaia:item/yabach_seeking_eyes"
+  }
+}

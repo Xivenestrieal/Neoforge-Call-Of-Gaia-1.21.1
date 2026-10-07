@@ -24,7 +24,7 @@
   "item.call_of_gaia.lazurite_key": "Lazurite Key",
   "item.call_of_gaia.hogyoku_soul": "Hogyoku Soul",
   "item.call_of_gaia.corrupted_soul": "Corrupted Soul",
-  "item.call_of_gaia.seeking_eyes": "Seeking Eyes",
+  "item.call_of_gaia.yabach_seeking_eyes": "Yabach Seeking Eyes",
 
 
   "item.call_of_gaia.root_heart": "Root Heart",
@@ -72,9 +72,11 @@
 
 
   "tooltip.call_of_gaia.seeking_block.tooltip": "What does it seek? I wonder... if only i could §9see§r into it's mind",
+  "tooltip.call_of_gaia.yabach_seeking_eyes": "An eye, constantly seeking his wrongdoings",
   "tooltip.call_of_gaia.chisel": "Press §eShift§r for more Information",
   "tooltip.call_of_gaia.chisel.shift_down": "This item can chisel Blocks into Bricks",
   "item.call_of_gaia.seeking_eyes.tooltip": "The ever seeking eyes, constantly looking for a §9place§r to belong",
+
 
 
   "entity.mccourse.gecko": "Gecko",

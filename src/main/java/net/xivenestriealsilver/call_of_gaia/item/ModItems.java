@@ -1,6 +1,5 @@
 package net.xivenestriealsilver.call_of_gaia.item;
 
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.common.DeferredSpawnEggItem;
@@ -9,12 +8,11 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.xivenestriealsilver.call_of_gaia.CallOfGaia;
 import net.xivenestriealsilver.call_of_gaia.entity.ModEntities;
 import net.xivenestriealsilver.call_of_gaia.item.custom.*;
+import net.xivenestriealsilver.call_of_gaia.item.custom.boss_items.YabachSeekingEyesItem;
 import net.xivenestriealsilver.call_of_gaia.item.custom.soul_evolutions.CorruptEvolutionAwakeningItem;
 import net.xivenestriealsilver.call_of_gaia.item.custom.soul_evolutions.PureEvolutionAwakeningItem;
 import net.xivenestriealsilver.call_of_gaia.item.custom.soul_evolutions.TaintedEvolutionAwakeningItem;
 import net.xivenestriealsilver.call_of_gaia.item.custom.tarot_cards.*;
-
-import java.util.List;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(CallOfGaia.MOD_ID);
@@ -34,15 +32,8 @@ public class ModItems {
     public static final DeferredItem<Item> LAZURITE_KEY = ITEMS.register("lazurite_key",
             () -> new Item(new Item.Properties()));
 
-    public static final DeferredItem<Item> SEEKING_EYES = ITEMS.register("seeking_eyes",
-            () -> new Item(new Item.Properties())  {
-                @Override
-                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-                  tooltipComponents.add(Component.translatable("item.call_of_gaia.seeking_eyes.tooltip"));
-
-                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-                }
-            });
+    public static final DeferredItem<Item> YABACH_SEEKING_EYES = ITEMS.register("yabach_seeking_eyes",
+            () -> new YabachSeekingEyesItem(new Item.Properties().fireResistant().stacksTo(1)));
 
 
                                             //SOUL EVOLUTION

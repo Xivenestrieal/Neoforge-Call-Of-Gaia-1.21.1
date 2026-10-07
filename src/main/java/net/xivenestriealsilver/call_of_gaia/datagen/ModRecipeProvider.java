@@ -74,7 +74,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("EGC")
                 .pattern("BBB")
                 .define('B', ModItems.LAZURITE_INGOT.get())
-                .define( 'S', ModItems.SEEKING_EYES.get())
+                .define( 'S', ModItems.YABACH_SEEKING_EYES.get())
                 .define( 'E', Items.DIAMOND)
                 .define( 'C', Items.LAPIS_LAZULI)
                 .define( 'G', Items.COMPASS)
@@ -85,7 +85,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
                                                     //Items
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SEEKING_EYES.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.YABACH_SEEKING_EYES.get())
                 .pattern(" B ")
                 .pattern("BSB")
                 .pattern(" B ")

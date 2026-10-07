@@ -36,7 +36,7 @@ public class SeekingBlock extends Block {
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof ItemEntity itemEntity) {
             if(itemEntity.getItem().getItem() == Items.ENDER_EYE) {
-                itemEntity.setItem(new ItemStack(ModItems.SEEKING_EYES.get(), itemEntity.getItem().getCount()));
+                itemEntity.setItem(new ItemStack(ModItems.YABACH_SEEKING_EYES.get(), itemEntity.getItem().getCount()));
             }
         }
 

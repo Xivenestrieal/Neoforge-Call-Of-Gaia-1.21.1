@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "call_of_gaia:item/seeking_eyes"
-  }
-}

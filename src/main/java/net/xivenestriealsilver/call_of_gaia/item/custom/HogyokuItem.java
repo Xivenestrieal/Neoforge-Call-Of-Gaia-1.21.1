@@ -7,5 +7,4 @@ public class HogyokuItem extends Item{
         super(properties);
     }
 
-
 }

@@ -1,4 +1,4 @@
-// 1.21.1	2026-09-14T10:42:12.9349308	Item Models: call_of_gaia
+// 1.21.1	2026-10-07T16:27:29.3340014	Item Models: call_of_gaia
 a4530b25b48f092d31f127e811b3e0ba7fe21987 assets/call_of_gaia/models/item/chisel.json
 b63b71fe7d03d1c58e1c39613739733485a4981f assets/call_of_gaia/models/item/corrupted_soul.json
 575419a13a9e80779afb435a134f65ce3e49662b assets/call_of_gaia/models/item/death_card.json
@@ -61,7 +61,6 @@ f7feeac7bffce7694f05dbcf740c450ec90f2c88 assets/call_of_gaia/models/item/lazurit
 02538009904648567aedfb89eeb6349ba41cbb87 assets/call_of_gaia/models/item/lazurite_sword.json
 4ecee5bd095d16ac6faefe06a9b81c6d52355b28 assets/call_of_gaia/models/item/raw_lazurite.json
 78a6f1bded85c91d8902f33e7a59e93497c3312c assets/call_of_gaia/models/item/root_heart.json
-118f210f83593b2eb35efb05e23b90e9ea65f2f0 assets/call_of_gaia/models/item/seeking_eyes.json
 8b8f5ed97eac76da2a671b81aeb9f5061e5da296 assets/call_of_gaia/models/item/strength_card.json
 ae4a2bc1b53cc9c51041dfccee4e9de0e9334668 assets/call_of_gaia/models/item/temperance_card.json
 73384185fa586f0846d3b088a5ba2603a2b99c6c assets/call_of_gaia/models/item/the_chariot_card.json

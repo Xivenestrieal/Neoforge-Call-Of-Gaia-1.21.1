@@ -1,4 +1,4 @@
-// 1.21.1	2026-09-14T10:42:12.9406745	Recipes
+// 1.21.1	2026-10-07T16:02:37.866119	Recipes
 b98dbe83817f8c1899d96d31489c62734ed6527b data/call_of_gaia/advancement/recipes/misc/lazurite_block.json
 87f6efec1394e3fd155237b5e346309b9f5d3b6a data/call_of_gaia/advancement/recipes/misc/lazurite_ingot.json
 7c240e67c13f18b3b9d454b07f7966792e3746f3 data/call_of_gaia/advancement/recipes/misc/lazurite_ingot_from_blasting_deepslate_lazurite_ore.json
@@ -8,6 +8,8 @@ ab54581da8a2f49130e69e235064cfd46ec872da data/call_of_gaia/advancement/recipes/m
 ff9d978c87612bfee1628e079a23f7739b6b4de5 data/call_of_gaia/advancement/recipes/misc/lazurite_ingot_from_smelting_deepslate_lazurite_ore.json
 78aba6d9ffe0beeb3a41a8b4e2b647dd1e564d04 data/call_of_gaia/advancement/recipes/misc/lazurite_ingot_from_smelting_lazurite_ore.json
 3ae7991c2bd2258fd9f6bc77ecaa24e06b7e050f data/call_of_gaia/advancement/recipes/misc/lazurite_ingot_from_smelting_raw_lazurite.json
+24b27a082ea8a341af56500bfcdbd74808bf1375 data/call_of_gaia/advancement/recipes/misc/seeking_block.json
+f8714a2b1a61ed7ca346df4ae9d7866647f7ef81 data/call_of_gaia/advancement/recipes/misc/yabach_seeking_eyes.json
 a46e1691abd70102097325f4ab05e418f990698c data/call_of_gaia/advancement/recipes/tools/lazurite_hoe.json
 99f45a0237303c2e913eedeef4089c7d8edc524d data/call_of_gaia/advancement/recipes/tools/lazurite_shovel.json
 c899b714d103a044bec61d302cb4ebf27ffea526 data/call_of_gaia/advancement/recipes/tools/lazurite_sword.json
@@ -23,3 +25,5 @@ e3df4aaf742bab5f33db60a843b9bae27953381a data/call_of_gaia/recipe/lazurite_ingot
 c100ecc8b27855e5bcf62c2ad3743d57db30edff data/call_of_gaia/recipe/lazurite_ingot_from_smelting_raw_lazurite.json
 8cccc16f8205f29fd0aa92b3f06a5066cae911a4 data/call_of_gaia/recipe/lazurite_shovel.json
 d98e1930b9fa707accc752c45172fa269c549ea5 data/call_of_gaia/recipe/lazurite_sword.json
+498fa12782f4be35a6c948ef7698d6d9626f6f45 data/call_of_gaia/recipe/seeking_block.json
+23520e5849d1017c3cee6ab9bf5c143e2ba8a86f data/call_of_gaia/recipe/yabach_seeking_eyes.json

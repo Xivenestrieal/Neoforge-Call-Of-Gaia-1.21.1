@@ -54,7 +54,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.ENT_CHARCOAL.get());
 
         basicItem(ModItems.CHISEL.get());
-        basicItem(ModItems.SEEKING_EYES.get());
         basicItem(ModItems.LAZURITE_KEY.get());
 
         basicItem(ModItems.THE_FOOL_CARD.get());

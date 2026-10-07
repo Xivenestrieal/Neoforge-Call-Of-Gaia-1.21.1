@@ -24,7 +24,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.LAZURITE_KEY);
                         output.accept(ModItems.RAW_LAZURITE);
                         output.accept(ModItems.HOGYOKU_SOUL);
-                        output.accept(ModItems.SEEKING_EYES);
+                        output.accept(ModItems.YABACH_SEEKING_EYES);
                         output.accept(ModItems.CORRUPTED_SOUL);
                         output.accept(ModItems.ROOT_HEART);
                         output.accept(ModItems.ENT_CHARCOAL);
