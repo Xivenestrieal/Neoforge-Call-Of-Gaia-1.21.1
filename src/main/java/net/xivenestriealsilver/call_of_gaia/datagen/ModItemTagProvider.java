@@ -64,6 +64,37 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.HOES)
                 .add(ModItems.LAZURITE_HOE.get());
 
+        tag(ModTags.Items.BLAST_RESISTANT_ITEMS)
+                .add(ModItems.CORRUPTED_SOUL.get())
+                .add(ModItems.TAINTED_EVOLUTION_AWAKENING.get())
+                .add(ModItems.PURE_EVOLUTION_AWAKENING.get())
+                .add(ModItems.HOGYOKU_SOUL.get())
+                .add(ModItems.THE_FOOL_CARD.get())
+                .add(ModItems.THE_MAGICIAN_CARD.get())
+                .add(ModItems.THE_HIGH_PRIESTESS_CARD.get())
+                .add(ModItems.THE_EMPRESS_CARD.get())
+                .add(ModItems.THE_EMPEROR_CARD.get())
+                .add(ModItems.THE_HIEROPHANT_CARD.get())
+                .add(ModItems.THE_LOVERS_CARD.get())
+                .add(ModItems.THE_CHARIOT_CARD.get())
+                .add(ModItems.STRENGTH_CARD.get())
+                .add(ModItems.THE_HERMIT_CARD.get())
+                .add(ModItems.WHEEL_OF_FORTUNE_CARD.get())
+                .add(ModItems.JUSTICE_CARD.get())
+                .add(ModItems.THE_HANGED_MAN_CARD.get())
+                .add(ModItems.DEATH_CARD.get())
+                .add(ModItems.TEMPERANCE_CARD.get())
+                .add(ModItems.THE_DEVIL_CARD.get())
+                .add(ModItems.THE_TOWER_CARD.get())
+                .add(ModItems.THE_STAR_CARD.get())
+                .add(ModItems.THE_MOON_CARD.get())
+                .add(ModItems.THE_SUN_CARD.get())
+                .add(ModItems.JUDGEMENT_CARD.get())
+                .add(ModItems.THE_WORLD_CARD.get());
+
+
+
+
         this.tag(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.LAZURITE_HELMET.get())
                 .add(ModItems.LAZURITE_CHESTPLATE.get())

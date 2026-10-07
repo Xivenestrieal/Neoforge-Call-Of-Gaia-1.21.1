@@ -11,4 +11,10 @@ public class ModFoodProperties {
     public static final FoodProperties PURE_EVOLUTION_AWAKENING = new FoodProperties.Builder().nutrition(0).saturationModifier(0f)
             .effect(()-> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600), 1f).build();
 
+    public static final FoodProperties CORRUPT_EVOLUTION_AWAKENING = new FoodProperties.Builder().nutrition(0).saturationModifier(0f)
+            .effect(()-> new MobEffectInstance(MobEffects.WEAKNESS, 600), 1f).build();
+
+    public static final FoodProperties TAINTED_EVOLUTION_AWAKENING = new FoodProperties.Builder().nutrition(0).saturationModifier(0f)
+            .effect(()-> new MobEffectInstance(MobEffects.POISON, 600), 1f).build();
+
 }

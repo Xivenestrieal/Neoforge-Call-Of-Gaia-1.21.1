@@ -25,6 +25,8 @@ public class ModTags {
 
         public static final TagKey<Item> CARD_DECK = CuriosTags.createItemTag("card_deck");
 
+        public static final TagKey<Item> BLAST_RESISTANT_ITEMS = createTag("blast_resistant_items");
+
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(CallOfGaia.MOD_ID, name));
         }

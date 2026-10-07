@@ -1,4 +1,5 @@
-// 1.21.1	2026-09-14T13:10:38.2429053	Tags for minecraft:item mod id call_of_gaia
+// 1.21.1	2026-10-07T10:11:35.3933875	Tags for minecraft:item mod id call_of_gaia
+5fef996e38fbfd96756be4e413f7e82927ff4acf data/call_of_gaia/tags/item/blast_resistant_items.json
 894d0826f693401d3cbfb892e85ef2d9a30c3a4d data/call_of_gaia/tags/item/transformable_items.json
 2ed539a2b638cdbedbaa33840c4f9db38319a9d5 data/curios/tags/item/card_deck.json
 959a11799e2d415ccb3a240ef9b13c065e0c591b data/minecraft/tags/item/axes.json

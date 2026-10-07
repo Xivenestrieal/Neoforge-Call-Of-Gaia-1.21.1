@@ -9,7 +9,9 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.xivenestriealsilver.call_of_gaia.CallOfGaia;
 import net.xivenestriealsilver.call_of_gaia.entity.ModEntities;
 import net.xivenestriealsilver.call_of_gaia.item.custom.*;
+import net.xivenestriealsilver.call_of_gaia.item.custom.soul_evolutions.CorruptEvolutionAwakeningItem;
 import net.xivenestriealsilver.call_of_gaia.item.custom.soul_evolutions.PureEvolutionAwakeningItem;
+import net.xivenestriealsilver.call_of_gaia.item.custom.soul_evolutions.TaintedEvolutionAwakeningItem;
 import net.xivenestriealsilver.call_of_gaia.item.custom.tarot_cards.*;
 
 import java.util.List;
@@ -48,10 +50,16 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> PURE_EVOLUTION_AWAKENING = ITEMS.register("pure_evolution_awakening",
-            () -> new PureEvolutionAwakeningItem(new Item.Properties().food(ModFoodProperties.PURE_EVOLUTION_AWAKENING).rarity(Rarity.EPIC).stacksTo(1)));
+            () -> new PureEvolutionAwakeningItem(new Item.Properties().food(ModFoodProperties.PURE_EVOLUTION_AWAKENING).rarity(Rarity.EPIC).stacksTo(1).fireResistant()));
+
+    public static final DeferredItem<Item> CORRUPT_EVOLUTION_AWAKENING = ITEMS.register("corrupt_evolution_awakening",
+            () -> new CorruptEvolutionAwakeningItem(new Item.Properties().food(ModFoodProperties.CORRUPT_EVOLUTION_AWAKENING).rarity(Rarity.EPIC).stacksTo(1).fireResistant()));
+
+    public static final DeferredItem<Item> TAINTED_EVOLUTION_AWAKENING = ITEMS.register("tainted_evolution_awakening",
+            () -> new TaintedEvolutionAwakeningItem(new Item.Properties().food(ModFoodProperties.TAINTED_EVOLUTION_AWAKENING).rarity(Rarity.EPIC).stacksTo(1).fireResistant()));
 
 
-                                            //FOOD / CONSUMABLES
+                                   //FOOD / CONSUMABLES
     public static final DeferredItem<Item> ROOT_HEART = ITEMS.register("root_heart",
             () -> new Item(new Item.Properties().food(ModFoodProperties.ROOT_HEART)));
 
@@ -59,7 +67,7 @@ public class ModItems {
             () -> new FuelItem(new Item.Properties(), 2000));
 
     public static final DeferredItem<Item> FROZEN_FLAME = ITEMS.register("frozen_flame",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().fireResistant()));
 
 
                                                     // MAJOR ARCANA

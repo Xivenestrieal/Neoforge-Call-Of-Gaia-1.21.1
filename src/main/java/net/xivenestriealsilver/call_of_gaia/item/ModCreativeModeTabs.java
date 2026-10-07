@@ -70,6 +70,11 @@ public class ModCreativeModeTabs {
 
 
                       //  output.accept(ModItems.GUIDE_BOOK);
+
+                        // Soul Evolutions
+                        output.accept(ModItems.PURE_EVOLUTION_AWAKENING);
+                        output.accept(ModItems.CORRUPT_EVOLUTION_AWAKENING);
+                        output.accept(ModItems.TAINTED_EVOLUTION_AWAKENING);
                     }).build());
 
     public static final Supplier<CreativeModeTab> LAZURITE_BLOCK_TAB = CREATIVE_MODE_TAB.register("lazurite_blocks_tab",
