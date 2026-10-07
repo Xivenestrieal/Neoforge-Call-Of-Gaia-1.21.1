@@ -24,6 +24,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> LAZURITE_SMELTABLES = List.of(ModItems.RAW_LAZURITE,
                 ModBlocks.LAZURITE_ORE, ModBlocks.DEEPSLATE_LAZURITE_ORE);
 
+                            //tools
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.LAZURITE_SWORD.get())
                 .pattern(" BB")
@@ -33,7 +34,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define( 'S', Items.STICK)
                 .unlockedBy("has_lazurite_ingot", has(ModItems.LAZURITE_INGOT)).save(recipeOutput);
 
-
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.LAZURITE_HOE.get())
                 .pattern(" BB")
                 .pattern(" B ")
@@ -41,7 +41,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', ModItems.LAZURITE_INGOT.get())
                 .define( 'S', Items.STICK)
                 .unlockedBy("has_lazurite_ingot", has(ModItems.LAZURITE_INGOT)).save(recipeOutput);
-
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.LAZURITE_SHOVEL.get())
                 .pattern(" B ")
@@ -51,6 +50,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define( 'S', Items.STICK)
                 .unlockedBy("has_lazurite_ingot", has(ModItems.LAZURITE_INGOT)).save(recipeOutput);
 
+
+                                //blocks
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.LAZURITE_BLOCK.get())
                 .pattern("BBB")
@@ -68,6 +69,32 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_seeking_block", has(ModBlocks.SEEKING_BLOCK))
                 .save(recipeOutput, "call_of_gaia:lazurite_ingot_from_seeking_block");
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SEEKING_BLOCK.get())
+                .pattern(" S ")
+                .pattern("EGC")
+                .pattern("BBB")
+                .define('B', ModItems.LAZURITE_INGOT.get())
+                .define( 'S', ModItems.SEEKING_EYES.get())
+                .define( 'E', Items.DIAMOND)
+                .define( 'C', Items.LAPIS_LAZULI)
+                .define( 'G', Items.COMPASS)
+                .unlockedBy("has_lazurite_ingot", has(ModItems.LAZURITE_INGOT)).save(recipeOutput);
+
+
+
+
+
+                                                    //Items
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SEEKING_EYES.get())
+                .pattern(" B ")
+                .pattern("BSB")
+                .pattern(" B ")
+                .define('B', ModItems.LAZURITE_INGOT.get())
+                .define( 'S', Items.ENDER_EYE)
+                .unlockedBy("has_lazurite_ingot", has(ModItems.LAZURITE_INGOT)).save(recipeOutput);
+
+
+        //smelting
         oreSmelting(recipeOutput, LAZURITE_SMELTABLES, RecipeCategory.MISC, ModItems.LAZURITE_INGOT.get(), 0.25f, 300, "lazurite_ingot");
         oreBlasting(recipeOutput, LAZURITE_SMELTABLES, RecipeCategory.MISC, ModItems.LAZURITE_INGOT.get(), 0.25f, 150, "lazurite_ingot");
     }
