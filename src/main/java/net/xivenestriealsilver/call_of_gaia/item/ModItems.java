@@ -33,7 +33,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> YABACH_SEEKING_EYES = ITEMS.register("yabach_seeking_eyes",
-            () -> new YabachSeekingEyesItem(new Item.Properties().fireResistant().stacksTo(1)));
+            () -> new YabachSeekingEyesItem(new Item.Properties().fireResistant().stacksTo(4)));
 
 
                                             //SOUL EVOLUTION
