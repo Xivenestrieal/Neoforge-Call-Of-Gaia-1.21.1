@@ -42,10 +42,8 @@ public class TheTowerCardItem extends Item implements ICurioItem {
             AttributeInstance toughnessAttr = serverPlayer.getAttribute(Attributes.ARMOR_TOUGHNESS);
             if (armorAttr == null || toughnessAttr == null) return;
 
-            // 1. Check movement using server movement handler
             boolean isMoving = ServerMovementHandler.isPlayerMoving(serverPlayer);
 
-            // Spawn particles periodically while the player is standing still.
             if (!isMoving && serverPlayer.level().getGameTime() % 5L == 0L) {
                 serverPlayer.serverLevel().sendParticles(
                         ParticleTypes.END_ROD,
@@ -60,10 +58,9 @@ public class TheTowerCardItem extends Item implements ICurioItem {
                 );
             }
 
-            // 2. Determine what the multiplier should be
+            // defense based on mvmnt
             double targetAmount = isMoving ? 0.2 : 0.4;
 
-            // 3. Check what modifier is currently applied
             AttributeModifier currentArmorMod = armorAttr.getModifier(TOWER_ARMOR_ID);
 
             // 4. Only update if they don't have it yet, or if their movement state changed (amount doesn't match)
